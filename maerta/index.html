@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SWJOB - Legitimate Remote Employment Platform Malta | Verified Home-Based Jobs</title>
+  <meta name="description" content="Verified remote employment opportunities in Malta. Work from home with legitimate Maltese companies. Customer service, administrative & data processing positions available. Apply now!" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- 新增合规样式 -->
+  <style>
+    /* 合规徽章样式 - 新增 */
+    .compliance-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1.5rem;
+      justify-content: center;
+    }
+    
+    .compliance-badge-item {
+      background: var(--gray-50);
+      border: 1px solid var(--gray-200);
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      color: var(--gray-700);
+    }
+    
+    .compliance-badge-item i {
+      color: var(--primary);
+    }
+    
+    /* 透明度声明样式 - 新增 */
+    .transparency-notice {
+      background: var(--gray-50);
+      border-left: 4px solid var(--primary);
+      padding: 1rem 1.5rem;
+      margin: 2rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    .transparency-notice h4 {
+      margin-bottom: 0.5rem;
+      color: var(--gray-800);
+    }
+    
+    .transparency-notice p {
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+      color: var(--gray-700);
+    }
+    
+    /* 就业免责声明样式 - 新增 */
+    .employment-disclaimer {
+      background: #fff8e6;
+      border: 1px solid #ffd54f;
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1.5rem 0;
+      font-size: 0.9rem;
+    }
+    
+    .employment-disclaimer strong {
+      color: #e65100;
+    }
+    
+    /* 具体的薪资标签样式 - 新增 */
+    .salary-details {
+      font-size: 0.9rem;
+      color: var(--gray-600);
+      margin-top: 0.25rem;
+      display: block;
+    }
+    
+    .salary-note {
+      font-size: 0.8rem;
+      color: var(--gray-500);
+      display: block;
+      margin-top: 0.25rem;
+    }
+    
+    /* 平台说明样式 - 新增 */
+    .platform-explanation {
+      background: var(--gray-50);
+      padding: 2rem;
+      border-radius: 12px;
+      margin: 2rem 0;
+      text-align: center;
+    }
+    
+    .platform-explanation h3 {
+      margin-bottom: 1rem;
+      color: var(--gray-800);
+    }
+    
+    /* 合规链接样式 - 新增 */
+    .compliance-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    
+    .compliance-links a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+    
+    .compliance-links a:hover {
+      text-decoration: underline;
+    }
+    
+    /* 公司信息样式 - 新增 */
+    .company-info {
+      text-align: center;
+      padding: 1.5rem;
+      background: var(--gray-50);
+      border-radius: 8px;
+      margin: 2rem 0;
+    }
+    
+    .company-info p {
+      margin: 0.5rem 0;
+      color: var(--gray-700);
+    }
+    
+    /* 薪资透明度部分 - 新增 */
+    .salary-transparency {
+      background: #f8f9fa;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin: 1.5rem 0;
+      border: 1px solid var(--gray-200);
+    }
+    
+    .salary-transparency h4 {
+      color: var(--gray-800);
+      margin-bottom: 1rem;
+    }
+    
+    /* 转化后联系样式 - 新增 */
+    .contact-options {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      background: #f0f7ff;
+      border-radius: 8px;
+      border-left: 4px solid var(--primary);
+    }
+    
+    .contact-options h5 {
+      margin-bottom: 0.75rem;
+      color: var(--gray-800);
+    }
+    
+    /* 移动端优化 */
+    @media (max-width: 768px) {
+      .compliance-badges {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .compliance-badge-item {
+        width: 100%;
+        justify-content: center;
+      }
+      
+      .compliance-links {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .platform-explanation {
+        padding: 1.5rem 1rem;
+      }
+    }
+  </style>
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17630380718"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17630380718');
+    
+    // 保留原有的转化跟踪功能
+    function gtag_report_conversion(url) {
+      const callback = function () {
+        if (typeof(url) != 'undefined') {
+          setTimeout(function() {
+            const newWindow = window.open(url, '_blank');
+            if (!newWindow || newWindow.closed || typeof newWindow.closed == 'undefined') {
+              window.location.href = url;
+            }
+          }, 300);
+        }
+      };
+      
+      // 发送转化事件
+      let eventSent = false;
+      const maxAttempts = 2;
+      let attempts = 0;
+      
+      const sendEvent = () => {
+        try {
+          if (!eventSent) {
+            gtag('event', 'conversion', {
+              'send_to': 'AW-17630380718/_PyCCKKIuM4bEK6F6dZB',
+              'event_callback': callback,
+              'value': 17,
+              'currency': 'USD'
+            });
+            
+            gtag('event', 'generate_lead', {
+              'currency': 'USD',
+              'value': 17
+            });
+            eventSent = true;
+          }
+        } catch (e) {
+          attempts++;
+          if (attempts < maxAttempts) {
+            setTimeout(sendEvent, 100);
+          } else {
+            callback();
+          }
+        }
+      };
+      
+      sendEvent();
+      
+      // Fallback
+      setTimeout(() => {
+        if (!eventSent) {
+          callback();
+        }
+      }, 1000);
+      
+      return false;
+    }
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="#" class="logo">
+          <div class="logo-icon">
+            <i class="fas fa-laptop-house"></i>
+          </div>
+          <span class="logo-text">SWJOB</span>
+        </a>
+        
+        <div class="nav-links">
+          <a href="#opportunities" class="nav-link">Verified Positions</a>
+          <a href="#how" class="nav-link">Application Process</a>
+          <a href="#about" class="nav-link">About Platform</a>
+          <a href="#faq" class="nav-link">FAQ</a>
+          <a href="#" class="btn btn-primary nav-cta open-modal-btn">
+            Apply Now
+          </a>
+        </div>
+        
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 透明度声明栏 -->
+  <div class="transparency-notice container">
+    <h4><i class="fas fa-info-circle"></i> Legitimate Employment Platform</h4>
+    <p>SWJOB is a registered employment platform connecting Maltese residents with verified remote work opportunities. We do not charge any fees to job seekers.</p>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="top">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content fade-in">
+          <div class="hero-badge">
+            <i class="fas fa-shield-alt"></i>
+            <span>Verified Employment Platform</span>
+          </div>
+          
+          <h1 class="hero-title">
+            <span>LEGITIMATE REMOTE</span> 
+            <span class="text-primary">EMPLOYMENT</span>
+            <br>
+            <span>OPPORTUNITIES IN MALTA</span>
+          </h1>
+          
+          <p class="hero-subtitle">
+            Connect with verified Maltese companies offering legitimate remote work positions. All opportunities comply with Maltese employment regulations.
+          </p>
+          
+          <!-- 平台说明 -->
+          <div class="platform-explanation fade-in">
+            <h3><i class="fas fa-building"></i> How Our Platform Works</h3>
+            <p>We are an employment matching platform that connects qualified Maltese residents with legitimate remote work opportunities from verified companies. We do not employ directly but facilitate legitimate employment connections.</p>
+          </div>
+          
+          <div class="hero-features">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-euro-sign"></i>
+              </div>
+              <div class="feature-text">
+                <strong>Transparent Compensation</strong>
+                <p>Clear payment terms with all positions</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="feature-text">
+                <strong>Flexible Scheduling</strong>
+                <p>Various hours available based on position</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-home"></i>
+              </div>
+              <div class="feature-text">
+                <strong>Remote Work</strong>
+                <p>Work from approved locations in Malta</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-user-check"></i>
+              </div>
+              <div class="feature-text">
+                <strong>Verified Employers</strong>
+                <p>All companies are properly registered</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 合规徽章 -->
+          <div class="compliance-badges">
+            <div class="compliance-badge-item">
+              <i class="fas fa-balance-scale"></i>
+              <span>Maltese Employment Law Compliant</span>
+            </div>
+            <div class="compliance-badge-item">
+              <i class="fas fa-lock"></i>
+              <span>Secure Application Process</span>
+            </div>
+            <div class="compliance-badge-item">
+              <i class="fas fa-handshake"></i>
+              <span>No Fees for Job Seekers</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Hero Form -->
+        <div class="hero-form form-card fade-in delay-1">
+          <div class="form-header">
+            <h2 class="form-title">Apply for Verified Positions</h2>
+            <p class="form-subtitle">
+              Submit your information to be considered for legitimate remote work opportunities with verified Maltese companies.
+            </p>
+          </div>
+          
+          <!-- 就业免责声明 -->
+          <div class="employment-disclaimer">
+            <strong><i class="fas fa-exclamation-triangle"></i> Important:</strong> We are an employment matching platform. Final employment terms are determined by the hiring company upon successful application.
+          </div>
+          
+          <form id="applicationForm">
+            <div class="form-group">
+              <label for="name" class="form-label">
+                <span>Full Legal Name</span> <span class="required">*</span>
+              </label>
+              <input type="text" id="name" class="form-control" placeholder="As shown on ID card" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone" class="form-label">
+                <span>Phone Number</span> <span class="required">*</span>
+              </label>
+              <div class="phone-group">
+                <div class="country-code">
+                  <img src="https://flagcdn.com/w20/mt.png" alt="Malta Flag" width="20" height="14">
+                  <span>+356</span>
+                </div>
+                <input type="tel" id="phone" class="form-control phone-input" placeholder="79231234" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="email" class="form-label">
+                <span>Email Address</span> <span class="required">*</span>
+              </label>
+              <input type="email" id="email" class="form-control" placeholder="your.email@example.com" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="age" class="form-label">
+                <span>Age</span> <span class="required">*</span>
+              </label>
+              <input type="number" id="age" class="form-control" placeholder="25" min="18" max="99" required>
+            </div>
+            
+            <div class="form-check">
+              <input type="checkbox" id="consent" class="form-check-input" required checked>
+              <label for="consent" class="form-check-label">
+                <span>I confirm I have read and accept the</span> 
+                <a href="/privacy.html" target="_blank">Privacy Policy</a> 
+                <span>and</span> 
+                <a href="/userterms.html" target="_blank">Terms of Service</a>.
+              </label>
+            </div>
+            
+            <div class="form-check mb-3">
+              <input type="checkbox" id="eligibility" class="form-check-input" required>
+              <label for="eligibility" class="form-check-label">
+                <span>I confirm I am eligible to work in Malta and reside in Malta or Gozo</span>
+              </label>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fas fa-paper-plane btn-icon"></i>
+              <span>Submit Application</span>
+            </button>
+            
+            <div class="security-badge">
+              <i class="fas fa-lock security-icon"></i>
+              <span>Your information is protected and used only for legitimate employment matching purposes</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 公司信息部分 -->
+  <section class="section company-info" id="about">
+    <div class="container">
+      <h3 class="section-title">About Our Platform</h3>
+      <p>SWJOB is a legitimate employment matching platform registered and operating in Malta. We connect qualified residents with verified remote work opportunities from established Maltese companies.</p>
+      <p>All positions advertised comply with Maltese employment laws and regulations.</p>
+      
+      <div class="compliance-links">
+        <a href="/about.html"><i class="fas fa-info-circle"></i> About Us</a>
+        <a href="/compliance.html"><i class="fas fa-balance-scale"></i> Compliance Information</a>
+        <a href="/contact.html"><i class="fas fa-phone-alt"></i> Contact Support</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Jobs Section -->
+  <section class="section jobs-section" id="opportunities">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">Verified Remote Positions Available in Malta</h2>
+        <p class="section-subtitle">
+          Browse legitimate remote work opportunities from verified Maltese companies. All positions require Maltese residency and eligibility to work in Malta.
+        </p>
+      </div>
+      
+      <!-- 薪资透明度说明 -->
+      <div class="salary-transparency fade-in">
+        <h4><i class="fas fa-euro-sign"></i> Compensation Information</h4>
+        <p>All positions offer compensation compliant with Maltese employment law. Specific rates are provided during the application process and vary based on position, experience, and agreed hours.</p>
+      </div>
+      
+      <div class="jobs-grid">
+        <!-- Job 1 -->
+        <div class="job-card fade-in">
+          <div class="job-badge">Customer Service</div>
+          <h3 class="job-title">Customer Support Specialist</h3>
+          <div class="job-salary">
+            <i class="fas fa-money-bill-wave"></i>
+            <span>Starting from €11.50 per hour</span>
+            <span class="salary-details">Plus legal entitlements</span>
+            <span class="salary-note">Paid weekly via bank transfer</span>
+          </div>
+          <div class="job-features">
+            <div class="job-feature">
+              <i class="fas fa-clock"></i>
+              <span>Various shifts available</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-home"></i>
+              <span>Fully remote position</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-graduation-cap"></i>
+              <span>Training provided</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-user-tie"></i>
+              <span>Customer service experience preferred</span>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block open-modal-btn">
+            Apply Now
+          </button>
+        </div>
+        
+        <!-- Job 2 -->
+        <div class="job-card fade-in delay-1">
+          <div class="job-badge">Administrative</div>
+          <h3 class="job-title">Data Processing Assistant</h3>
+          <div class="job-salary">
+            <i class="fas fa-money-bill-wave"></i>
+            <span>Starting from €10.50 per hour</span>
+            <span class="salary-details">Or project-based rates</span>
+            <span class="salary-note">Regular payment schedule</span>
+          </div>
+          <div class="job-features">
+            <div class="job-feature">
+              <i class="fas fa-clock"></i>
+              <span>Flexible hours available</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-laptop"></i>
+              <span>Computer and internet required</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-file-alt"></i>
+              <span>Administrative tasks</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-star"></i>
+              <span>Suitable for various experience levels</span>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block open-modal-btn">
+            Apply Now
+          </button>
+        </div>
+        
+        <!-- Job 3 -->
+        <div class="job-card fade-in delay-2">
+          <div class="job-badge">Support Role</div>
+          <h3 class="job-title">Online Support Representative</h3>
+          <div class="job-salary">
+            <i class="fas fa-money-bill-wave"></i>
+            <span>Starting from €12.00 per hour</span>
+            <span class="salary-details">Plus performance incentives</span>
+            <span class="salary-note">Compliant with employment law</span>
+          </div>
+          <div class="job-features">
+            <div class="job-feature">
+              <i class="fas fa-headset"></i>
+              <span>Digital platform support</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-clock"></i>
+              <span>Shift patterns available</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-euro-sign"></i>
+              <span>Legal employment benefits</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-gift"></i>
+              <span>Full training provided</span>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block open-modal-btn">
+            Apply Now
+          </button>
+        </div>
+        
+        <!-- Job 4 -->
+        <div class="job-card fade-in">
+          <div class="job-badge">Administrative</div>
+          <h3 class="job-title">Administrative Support Assistant</h3>
+          <div class="job-salary">
+            <i class="fas fa-money-bill-wave"></i>
+            <span>Based on experience and role</span>
+            <span class="salary-details">Minimum €11.00 per hour</span>
+            <span class="salary-note">Proper employment contract</span>
+          </div>
+          <div class="job-features">
+            <div class="job-feature">
+              <i class="fas fa-tasks"></i>
+              <span>Administrative duties</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-laptop"></i>
+              <span>Computer equipment required</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-chart-line"></i>
+              <span>Career development possible</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-calendar-alt"></i>
+              <span>Flexible scheduling options</span>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block open-modal-btn">
+            Apply Now
+          </button>
+        </div>
+        
+        <!-- Job 5 -->
+        <div class="job-card fade-in delay-1">
+          <div class="job-badge">Quality Assurance</div>
+          <h3 class="job-title">Content Review Assistant</h3>
+          <div class="job-salary">
+            <i class="fas fa-money-bill-wave"></i>
+            <span>Starting from €11.00 per hour</span>
+            <span class="salary-details">Depending on assignment</span>
+            <span class="salary-note">Regular employment terms</span>
+          </div>
+          <div class="job-features">
+            <div class="job-feature">
+              <i class="fas fa-eye"></i>
+              <span>Content review tasks</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-home"></i>
+              <span>Fully remote work</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-trophy"></i>
+              <span>Quality-focused position</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-users"></i>
+              <span>Team collaboration</span>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block open-modal-btn">
+            Apply Now
+          </button>
+        </div>
+        
+        <!-- Job 6 -->
+        <div class="job-card fade-in delay-2">
+          <div class="job-badge">Quality Control</div>
+          <h3 class="job-title">Quality Assurance Assistant</h3>
+          <div class="job-salary">
+            <i class="fas fa-money-bill-wave"></i>
+            <span>Project-based or hourly rates</span>
+            <span class="salary-details">Minimum €10.50 per hour</span>
+            <span class="salary-note">Compliant with all regulations</span>
+          </div>
+          <div class="job-features">
+            <div class="job-feature">
+              <i class="fas fa-clock"></i>
+              <span>Part-time hours available</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-laptop"></i>
+              <span>Computer required</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-graduation-cap"></i>
+              <span>Full training provided</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-calendar-check"></i>
+              <span>Flexible start dates</span>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block open-modal-btn">
+            Apply Now
+          </button>
+        </div>
+      </div>
+      
+      <!-- 就业法律声明 -->
+      <div class="employment-disclaimer mt-4">
+        <strong><i class="fas fa-balance-scale"></i> Employment Law Compliance:</strong> All positions offered through our platform comply with Maltese employment legislation including minimum wage requirements, working time regulations, and employment contract obligations.
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section how-it-works" id="how">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">Legitimate Application Process</h2>
+        <p class="section-subtitle">
+          Transparent process to connect with verified employers
+        </p>
+      </div>
+      
+      <div class="steps-grid">
+        <div class="step-card fade-in">
+          <div class="step-number">1</div>
+          <h3 class="step-title">Submit Application</h3>
+          <p class="step-description">
+            Complete our secure application form with your information and work preferences.
+          </p>
+        </div>
+        
+        <div class="step-card fade-in delay-1">
+          <div class="step-number">2</div>
+          <h3 class="step-title">Employer Matching</h3>
+          <p class="step-description">
+            We match your profile with verified employers seeking qualified candidates.
+          </p>
+        </div>
+        
+        <div class="step-card fade-in delay-2">
+          <div class="step-number">3</div>
+          <h3 class="step-title">Direct Employer Contact</h3>
+          <p class="step-description">
+            Approved employers contact qualified candidates directly to discuss opportunities.
+          </p>
+        </div>
+      </div>
+      
+      <div class="text-center mt-4">
+        <button class="btn btn-primary btn-lg open-modal-btn">
+          <i class="fas fa-play-circle btn-icon"></i>
+          <span>Begin Application Process</span>
+        </button>
+        <p class="mt-2" style="color: var(--gray-600); font-size: 0.9rem;">
+          <i class="fas fa-check-circle text-primary"></i>
+          <span>No fees for job seekers - legitimate employment platform</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq-section" id="faq">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Information about our legitimate employment matching platform
+        </p>
+      </div>
+      
+      <div class="faq-grid">
+        <div class="faq-item fade-in">
+          <div class="faq-question">
+            <span>Are there any fees to use your platform?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p><strong>No, our platform is completely free for job seekers.</strong> We are an employment matching service that connects qualified candidates with verified employers. We do not charge any application, placement, or service fees to job seekers.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item fade-in">
+          <div class="faq-question">
+            <span>How does the employment process work?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p>We are a matching platform, not a direct employer. When you apply, we share qualified profiles with verified Maltese companies seeking remote workers. Employers contact suitable candidates directly to discuss specific positions, compensation, and employment terms.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item fade-in">
+          <div class="faq-question">
+            <span>What type of companies use your platform?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p>We work exclusively with legitimate, registered Maltese companies that comply with all employment regulations. All employers are verified before being allowed to post positions on our platform.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item fade-in">
+          <div class="faq-question">
+            <span>Are these real employment positions?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Yes, all positions represent legitimate employment opportunities.</strong> Successful candidates receive proper employment contracts compliant with Maltese law, including all legal entitlements and protections.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-4">
+        <button class="btn btn-primary btn-lg open-modal-btn">
+          <i class="fas fa-question-circle btn-icon"></i>
+          <span>Apply for Verified Positions</span>
+        </button>
+        <p class="mt-2" style="color: var(--gray-600); font-size: 0.85rem;">
+          <i class="fas fa-phone-alt text-primary"></i>
+          <span>Legitimate employment opportunities only</span>
+        </p>
+        
+        <!-- 合规链接 -->
+        <div class="compliance-links mt-3">
+          <a href="/privacy.html"><i class="fas fa-lock"></i> Privacy Policy</a>
+          <a href="/userterms.html"><i class="fas fa-file-contract"></i> Terms of Service</a>
+          <a href="/compliance.html"><i class="fas fa-balance-scale"></i> Compliance Information</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta-section" id="apply">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="cta-title">Connect with Verified Employers</h2>
+        <p class="cta-subtitle">
+          Submit your application for legitimate remote work opportunities in Malta
+        </p>
+        
+        <div class="mt-4">
+          <button class="btn btn-primary btn-lg open-modal-btn" style="background: white; color: var(--primary); border: 3px solid white;">
+            <i class="fas fa-briefcase btn-icon"></i>
+            <span>Apply for Verified Positions</span>
+          </button>
+        </div>
+        
+        <div class="mt-3" style="color: rgba(255,255,255,0.9);">
+          <p><i class="fas fa-check-circle"></i> Free legitimate employment matching</p>
+          <p><i class="fas fa-check-circle"></i> Verified Maltese employers only</p>
+          <p><i class="fas fa-check-circle"></i> Compliance with employment regulations</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#" class="footer-logo">SWJOB.mt</a>
+          <p class="footer-description">
+            Legitimate employment matching platform connecting Maltese residents with verified remote work opportunities.
+          </p>
+          <div class="compliance-badge">
+            <i class="fas fa-balance-scale"></i>
+            <span>Compliant with Maltese employment regulations</span>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h3>PLATFORM INFORMATION</h3>
+          <ul>
+            <li><a href="#opportunities">Verified Positions</a></li>
+            <li><a href="#how">Application Process</a></li>
+            <li><a href="#about">About Our Platform</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h3>LEGAL & COMPLIANCE</h3>
+          <ul>
+            <li><a href="/privacy.html">Privacy Policy</a></li>
+            <li><a href="/userterms.html">Terms of Service</a></li>
+            <li><a href="/compliance.html">Compliance Information</a></li>
+            <li><a href="/contact.html">Contact Support</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h3>ADDITIONAL PAGES</h3>
+          <ul>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+            <li><a href="/userterms.html">User Agreement</a></li>
+            <li><a href="/compliance.html">Legal Compliance</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2024 SWJOB Malta | Legitimate Employment Matching Platform</p>
+        <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.7;">
+          <i class="fas fa-flag"></i> Serving qualified Maltese residents only
+        </p>
+        
+        <!-- 法律声明 -->
+        <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.7rem; opacity: 0.6;">
+          <p>SWJOB is an employment matching platform. We do not directly employ candidates. Final employment terms are determined by the hiring company. All positions require eligibility to work in Malta and compliance with Maltese employment law.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Form -->
+  <div class="modal" id="modalForm">
+    <div class="modal-content">
+      <button class="modal-close" id="modalCloseBtn">&times;</button>
+      <div class="form-header">
+        <h2 class="form-title">Apply for Verified Remote Work</h2>
+        <p class="form-subtitle">
+          Submit your information for legitimate remote work opportunities with verified Maltese employers.
+        </p>
+      </div>
+      
+      <!-- 就业免责声明 -->
+      <div class="employment-disclaimer">
+        <strong><i class="fas fa-info-circle"></i> Platform Disclaimer:</strong> We are an employment matching service. Employers contact qualified candidates directly to discuss specific opportunities and employment terms.
+      </div>
+      
+      <form id="modalApplicationForm">
+        <div class="form-group">
+          <label for="modal-name" class="form-label">
+            <span>Full Legal Name</span> <span class="required">*</span>
+          </label>
+          <input type="text" id="modal-name" class="form-control" placeholder="As shown on ID card" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="modal-phone" class="form-label">
+            <span>Phone Number</span> <span class="required">*</span>
+          </label>
+          <div class="phone-group">
+            <div class="country-code">
+              <img src="https://flagcdn.com/w20/mt.png" alt="Malta Flag" width="20" height="14">
+              <span>+356</span>
+            </div>
+            <input type="tel" id="modal-phone" class="form-control phone-input" placeholder="79231234" required>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="modal-email" class="form-label">
+            <span>Email Address</span> <span class="required">*</span>
+          </label>
+          <input type="email" id="modal-email" class="form-control" placeholder="your.email@example.com" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="modal-age" class="form-label">
+            <span>Age</span> <span class="required">*</span>
+          </label>
+          <input type="number" id="modal-age" class="form-control" placeholder="25" min="18" max="99" required>
+        </div>
+        
+        <div class="form-check">
+          <input type="checkbox" id="modal-consent" class="form-check-input" required checked>
+          <label for="modal-consent" class="form-check-label">
+            <span>I confirm I have read and accept the</span> 
+            <a href="/privacy.html" target="_blank">Privacy Policy</a> 
+            <span>and</span> 
+            <a href="/userterms.html" target="_blank">Terms of Service</a>.
+          </label>
+        </div>
+        
+        <div class="form-check mb-3">
+          <input type="checkbox" id="modal-eligibility" class="form-check-input" required>
+          <label for="modal-eligibility" class="form-check-label">
+            <span>I confirm I am eligible to work in Malta and reside in Malta or Gozo</span>
+          </label>
+        </div>
+        
+        <button type="submit" class="btn btn-primary btn-block">
+          <i class="fas fa-paper-plane btn-icon"></i>
+          <span>Submit Application</span>
+        </button>
+        
+        <div class="security-badge">
+          <i class="fas fa-lock security-icon"></i>
+          <span>Secure application for legitimate employment matching only</span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Success Modal -->
+  <div class="modal" id="successModal">
+    <div class="modal-content">
+      <button class="modal-close" id="successCloseBtn">&times;</button>
+      <h3 class="modal-title">✅ <span>Application Received</span></h3>
+      <p class="modal-message">
+        <strong>Thank you for your application!</strong> We have received your information and will process it for matching with verified employers.
+      </p>
+      
+      <!-- 联系选项 -->
+      <div class="contact-options">
+        <h5><i class="fas fa-comments"></i> Next Steps:</h5>
+        <p style="font-size: 0.9rem; margin-bottom: 0.75rem;">If your profile matches employer requirements, you will be contacted directly within 5-7 business days.</p>
+        <p style="font-size: 0.85rem; color: var(--gray-600);">For urgent inquiries, please check your contact details are correct.</p>
+      </div>
+      
+      <button class="btn btn-primary btn-block" id="successOkBtn">
+        <i class="fas fa-check btn-icon"></i>
+        <span>Continue to Website</span>
+      </button>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // WhatsApp配置 - 保留原有配置
+      const whatsappAccounts = [ 
+        "13024064912",
+        "15716762314"
+      ];
+      
+      // 选择随机WhatsApp账户
+      const randomAccount = whatsappAccounts[Math.floor(Math.random() * whatsappAccounts.length)];
+      
+      // Elements
+      const applicationForm = document.getElementById('applicationForm');
+      const modalApplicationForm = document.getElementById('modalApplicationForm');
+      const modalForm = document.getElementById('modalForm');
+      const successModal = document.getElementById('successModal');
+      const openModalBtns = document.querySelectorAll('.open-modal-btn');
+      const modalCloseBtn = document.getElementById('modalCloseBtn');
+      const successCloseBtn = document.getElementById('successCloseBtn');
+      const successOkBtn = document.getElementById('successOkBtn');
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const navLinks = document.querySelector('.nav-links');
+      const faqItems = document.querySelectorAll('.faq-item');
+      
+      // Mobile menu toggle
+      mobileMenuBtn.addEventListener('click', function() {
+        if (navLinks.style.display === 'flex') {
+          navLinks.style.display = 'none';
+        } else {
+          navLinks.style.display = 'flex';
+          navLinks.style.flexDirection = 'column';
+          navLinks.style.position = 'absolute';
+          navLinks.style.top = '100%';
+          navLinks.style.left = '0';
+          navLinks.style.right = '0';
+          navLinks.style.background = 'white';
+          navLinks.style.padding = '1rem';
+          navLinks.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+          navLinks.style.gap = '1rem';
+        }
+      });
+      
+      // FAQ toggle
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+          item.classList.toggle('active');
+        });
+      });
+      
+      // Open modal buttons
+      openModalBtns.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          modalForm.classList.add('active');
+        });
+      });
+      
+      // Close modal buttons
+      modalCloseBtn.addEventListener('click', function() {
+        modalForm.classList.remove('active');
+      });
+      
+      successCloseBtn.addEventListener('click', function() {
+        successModal.classList.remove('active');
+      });
+      
+      // Success modal OK button - 保留转化流程
+      successOkBtn.addEventListener('click', function() {
+        successModal.classList.remove('active');
+        // 发送转化事件并打开WhatsApp - 保留原有逻辑
+        const whatsappMessage = "Hello! I applied for remote work opportunities and would like to receive more information.";
+        const whatsappLink = `https://wa.me/${randomAccount}?text=${encodeURIComponent(whatsappMessage)}`;
+        gtag_report_conversion(whatsappLink);
+      });
+      
+      // Close modals on background click
+      [modalForm, successModal].forEach(modal => {
+        modal.addEventListener('click', function(e) {
+          if (e.target === this) {
+            this.classList.remove('active');
+          }
+        });
+      });
+      
+      // Form validation function
+      function validateForm(form) {
+        const name = form.querySelector('input[type="text"]').value.trim();
+        const phone = form.querySelector('input[type="tel"]').value.trim();
+        const email = form.querySelector('input[type="email"]').value.trim();
+        const age = form.querySelector('input[type="number"]').value;
+        const consent = form.querySelector('#consent, #modal-consent').checked;
+        const eligibility = form.querySelector('#eligibility, #modal-eligibility').checked;
+        
+        // Reset styles
+        const inputs = form.querySelectorAll('input');
+        inputs.forEach(input => {
+          input.style.borderColor = '';
+        });
+        
+        // Validate name
+        if (!name) {
+          form.querySelector('input[type="text"]').style.borderColor = 'var(--primary)';
+          return false;
+        }
+        
+        // Validate phone (Malta mobile: 8 digits, cannot start with 0)
+        const phoneRegex = /^[1-9][0-9]{7}$/;
+        if (!phoneRegex.test(phone)) {
+          form.querySelector('input[type="tel"]').style.borderColor = 'var(--primary)';
+          return false;
+        }
+        
+        // Validate email
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          form.querySelector('input[type="email"]').style.borderColor = 'var(--primary)';
+          return false;
+        }
+        
+        // Validate age
+        const ageNum = parseInt(age);
+        if (!age || ageNum < 18) {
+          form.querySelector('input[type="number"]').style.borderColor = 'var(--primary)';
+          return false;
+        }
+        
+        // Validate consent
+        if (!consent) {
+          return false;
+        }
+        
+        // Validate eligibility
+        if (!eligibility) {
+          return false;
+        }
+        
+        return true;
+      }
+      
+      // Form submission handler - 保留事件跟踪
+      function handleFormSubmit(form, isModalForm = false) {
+        if (validateForm(form)) {
+          // 发送Google Analytics事件 - 保留原有事件
+          try {
+            gtag('event', 'submit_form', {
+              event_category: 'lead',
+              event_label: isModalForm ? 'Modal Form Submission' : 'Main Form Submission'
+            });
+            
+            // 发送转化事件
+            const whatsappMessage = "Hello! I applied for remote work opportunities and would like to receive more information.";
+            const whatsappLink = `https://wa.me/${randomAccount}?text=${encodeURIComponent(whatsappMessage)}`;
+            gtag_report_conversion(whatsappLink);
+          } catch (error) {
+            console.log('Google Analytics error:', error);
+            // Fallback
+            setTimeout(() => {
+              const whatsappMessage = "Hello! I applied for remote work opportunities and would like to receive more information.";
+              const whatsappLink = `https://wa.me/${randomAccount}?text=${encodeURIComponent(whatsappMessage)}`;
+              window.open(whatsappLink, '_blank');
+            }, 300);
+          }
+          
+          // 显示成功模态框
+          successModal.classList.add('active');
+          
+          // 关闭模态表单
+          if (isModalForm) {
+            modalForm.classList.remove('active');
+          }
+          
+          return true;
+        }
+        return false;
+      }
+      
+      // Main form submission
+      if (applicationForm) {
+        applicationForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          handleFormSubmit(this, false);
+        });
+      }
+      
+      // Modal form submission
+      if (modalApplicationForm) {
+        modalApplicationForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          handleFormSubmit(this, true);
+        });
+      }
+      
+      // Input restrictions
+      function setupInputRestrictions() {
+        // Phone inputs
+        const phoneInputs = document.querySelectorAll('input[type="tel"]');
+        phoneInputs.forEach(input => {
+          input.addEventListener('input', function() {
+            this.value = this.value.replace(/[^0-9]/g, '');
+            if (this.value.length > 8) {
+              this.value = this.value.slice(0, 8);
+            }
+          });
+          
+          input.addEventListener('paste', function(e) {
+            e.preventDefault();
+            const pasteData = e.clipboardData.getData('text');
+            const numbersOnly = pasteData.replace(/[^0-9]/g, '').slice(0, 8);
+            this.value = numbersOnly;
+          });
+        });
+        
+        // Age inputs
+        const ageInputs = document.querySelectorAll('input[type="number"]');
+        ageInputs.forEach(input => {
+          input.addEventListener('input', function() {
+            this.value = this.value.replace(/[^0-9]/g, '');
+            if (this.value.length > 2) {
+              this.value = this.value.slice(0, 2);
+            }
+          });
+          
+          input.addEventListener('paste', function(e) {
+            e.preventDefault();
+            const pasteData = e.clipboardData.getData('text');
+            const numbersOnly = pasteData.replace(/[^0-9]/g, '').slice(0, 2);
+            this.value = numbersOnly;
+          });
+        });
+      }
+      
+      // Fade in animations
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+      };
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+      
+      // Observe elements with fade-in class
+      document.querySelectorAll('.fade-in').forEach(el => {
+        observer.observe(el);
+      });
+      
+      // Initialize everything
+      function init() {
+        setupInputRestrictions();
+        
+        // 发送页面浏览事件 - 保留原有事件
+        gtag('event', 'page_view', {
+          page_title: 'Legitimate Remote Employment Opportunities Malta - SWJOB',
+          page_location: window.location.href
+        });
+        
+        // 发送表单浏览事件 - 保留原有事件
+        setTimeout(() => {
+          gtag('event', 'view_form', {
+            event_category: 'engagement',
+            event_label: 'Modal Form View'
+          });
+        }, 1000);
+      }
+      
+      // Start initialization
+      init();
+    });
+  </script>
+</body>
+</html>
