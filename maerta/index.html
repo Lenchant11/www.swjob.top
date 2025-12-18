@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SWJOB - Remote Work Malta | Flexible Home-Based Jobs in Malta</title>
+  <meta name="description" content="Find flexible remote work opportunities in Malta. Work from home with adjustable hours. iGaming, customer service & data entry positions available. Apply now!" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17630380718"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17630380718');
+    
+    // Enhanced conversion reporting with fallback
+    function gtag_report_conversion(url) {
+      const callback = function () {
+        if (typeof(url) != 'undefined') {
+          setTimeout(function() {
+            // Open WhatsApp link in new tab
+            const newWindow = window.open(url, '_blank');
+            if (!newWindow || newWindow.closed || typeof newWindow.closed == 'undefined') {
+              window.location.href = url;
+            }
+          }, 300);
+        }
+      };
+      
+      // Send conversion event with retry mechanism
+      let eventSent = false;
+      const maxAttempts = 2;
+      let attempts = 0;
+      
+      const sendEvent = () => {
+        try {
+          if (!eventSent) {
+            gtag('event', 'conversion', {
+              'send_to': 'AW-17630380718/_PyCCKKIuM4bEK6F6dZB',
+              'event_callback': callback,
+              'value': 17,
+              'currency': 'USD'
+            });
+            
+            gtag('event', 'generate_lead', {
+              'currency': 'USD',
+              'value': 17
+            });
+            eventSent = true;
+          }
+        } catch (e) {
+          attempts++;
+          if (attempts < maxAttempts) {
+            setTimeout(sendEvent, 100);
+          } else {
+            callback();
+          }
+        }
+      };
+      
+      sendEvent();
+      
+      // Fallback - always open WhatsApp after timeout
+      setTimeout(() => {
+        if (!eventSent) {
+          callback();
+        }
+      }, 1000);
+      
+      return false;
+    }
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="#" class="logo">
+          <div class="logo-icon">
+            <i class="fas fa-laptop-house"></i>
+          </div>
+          <span class="logo-text">SWJOB</span>
+        </a>
+        
+        <div class="nav-links">
+          <a href="#opportunities" class="nav-link" data-i18n="nav.opportunities">Opportunities</a>
+          <a href="#how" class="nav-link" data-i18n="nav.how">How It Works</a>
+          <a href="#testimonials" class="nav-link" data-i18n="nav.testimonials">Testimonials</a>
+          <a href="#faq" class="nav-link" data-i18n="nav.faq">FAQ</a>
+          <a href="#" class="btn btn-primary nav-cta open-modal-btn" data-i18n="nav.apply">
+            Apply Now
+          </a>
+        </div>
+        
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Urgency Bar -->
+  <div class="urgency-bar">
+    <div class="container urgency-container">
+      <div class="urgency-scroll">
+        <div class="urgency-content">
+          <div class="urgency-item">
+            <span class="urgency-icon">📱</span>
+            <span data-i18n="urgency.item1">Work From Your Smartphone</span>
+          </div>
+          <div class="urgency-item">
+            <span class="urgency-icon">💰</span>
+            <span data-i18n="urgency.item2">Flexible Payment Options</span>
+          </div>
+          <div class="urgency-item">
+            <span class="urgency-icon">🏠</span>
+            <span data-i18n="urgency.item3">100% Remote Positions</span>
+          </div>
+          <div class="urgency-item">
+            <span class="urgency-icon">⭐</span>
+            <span data-i18n="urgency.item4">Trusted by Maltese Workers</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="top">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content fade-in">
+          <div class="hero-badge">
+            <i class="fas fa-bolt"></i>
+            <span data-i18n="hero.badge">Flexible Work Opportunities</span>
+          </div>
+          
+          <h1 class="hero-title">
+            <span data-i18n="hero.title">FIND FLEXIBLE</span> 
+            <span class="text-primary" data-i18n="hero.titleHighlight">REMOTE WORK</span>
+            <br>
+            <span data-i18n="hero.title2">FROM YOUR HOME IN MALTA</span>
+          </h1>
+          
+          <p class="hero-subtitle" data-i18n="hero.subtitle">
+            Join a community of Maltese professionals working from home with flexible hours. 
+            Basic smartphone and internet connection required for most positions.
+          </p>
+          
+          <!-- Mobile CTA Button -->
+          <div class="mobile-cta">
+            <button class="btn btn-primary btn-lg btn-block open-modal-btn mb-2">
+              <i class="fas fa-rocket btn-icon"></i>
+              <span data-i18n="hero.cta">Explore Available Positions</span>
+            </button>
+            <p style="color: var(--gray-600); font-size: 0.85rem; font-weight: 600;">
+              <i class="fas fa-shield-alt text-primary"></i>
+              <span data-i18n="hero.secure">Free to Apply • Secure Platform • Verified Opportunities</span>
+            </p>
+          </div>
+          
+          <div class="hero-features">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-euro-sign"></i>
+              </div>
+              <div class="feature-text">
+                <strong data-i18n="hero.feature1.title">Regular Payments</strong>
+                <p data-i18n="hero.feature1.desc">Multiple payment options available</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="feature-text">
+                <strong data-i18n="hero.feature2.title">Adjustable Hours</strong>
+                <p data-i18n="hero.feature2.desc">Choose hours that fit your schedule</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-home"></i>
+              </div>
+              <div class="feature-text">
+                <strong data-i18n="hero.feature3.title">Fully Remote</strong>
+                <p data-i18n="hero.feature3.desc">Work from anywhere in Malta</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-calendar-check"></i>
+              </div>
+              <div class="feature-text">
+                <strong data-i18n="hero.feature4.title">Quick Start</strong>
+                <p data-i18n="hero.feature4.desc">Simple application process</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Hero Form -->
+        <div class="hero-form form-card fade-in delay-1">
+          <div class="form-header">
+            <h2 class="form-title" data-i18n="form.title">Apply for Remote Positions</h2>
+            <p class="form-subtitle" data-i18n="form.subtitle">
+              Complete this form to receive information about available remote work opportunities matching your profile.
+            </p>
+          </div>
+          
+          <div class="form-step">
+            <div class="step-item active"></div>
+            <div class="step-item"></div>
+            <div class="step-item"></div>
+          </div>
+          
+          <form id="applicationForm">
+            <div class="form-group">
+              <label for="name" class="form-label">
+                <span data-i18n="form.name">Full Name</span> <span class="required">*</span>
+              </label>
+              <input type="text" id="name" class="form-control" placeholder="e.g. Mario Borg" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone" class="form-label">
+                <span data-i18n="form.phone">Phone Number</span> <span class="required">*</span>
+              </label>
+              <div class="phone-group">
+                <div class="country-code">
+                  <img src="https://flagcdn.com/w20/mt.png" alt="Malta Flag" width="20" height="14">
+                  <span>+356</span>
+                </div>
+                <input type="tel" id="phone" class="form-control phone-input" placeholder="e.g. 79231234" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="age" class="form-label">
+                <span data-i18n="form.age">Age</span> <span class="required">*</span>
+              </label>
+              <input type="number" id="age" class="form-control" placeholder="e.g. 25" min="18" max="99" required>
+            </div>
+            
+            <div class="form-check">
+              <input type="checkbox" id="consent" class="form-check-input" required checked>
+              <label for="consent" class="form-check-label">
+                <span data-i18n="form.consent">I accept the</span> 
+                <a href="privacy.html" target="_blank" data-i18n="form.privacy">Privacy Policy</a> 
+                <span data-i18n="form.and">and</span> 
+                <a href="terms.html" target="_blank" data-i18n="form.terms">Terms of Service</a>.
+              </label>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fas fa-paper-plane btn-icon"></i>
+              <span data-i18n="form.submit">Submit Application</span>
+            </button>
+            
+            <div class="security-badge">
+              <i class="fas fa-lock security-icon"></i>
+              <span data-i18n="form.secure">Your information is secure and confidential</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Jobs Section -->
+  <section class="section jobs-section" id="opportunities">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title" data-i18n="jobs.title">Available Remote Positions in Malta</h2>
+        <p class="section-subtitle" data-i18n="jobs.subtitle">
+          Browse our selection of remote work opportunities. Positions vary based on availability and qualifications.
+        </p>
+      </div>
+      
+      <div class="jobs-grid">
+        <!-- Job 1 -->
+        <div class="job-card fade-in">
+          <div class="job-badge" data-i18n="jobs.popular">Popular Choice</div>
+          <h3 class="job-title" data-i18n="jobs.job1.title">Online Customer Support</h3>
+          <div class="job-salary">
+            <i class="fas fa-money-bill-wave"></i>
+            <span data-i18n="jobs.job1.salary">Competitive Rates</span>
+          </div>
+          <div class="job-features">
+            <div class="job-feature">
+              <i class="fas fa-clock"></i>
+              <span data-i18n="jobs.job1.feature1">Flexible hours available</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-home"></i>
+              <span data-i18n="jobs.job1.feature2">Work from home</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-graduation-cap"></i>
+              <span data-i18n="jobs.job1.feature3">Training provided</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-bolt"></i>
+              <span data-i18n="jobs.job1.feature4">Quick application process</span>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block open-modal-btn" data-i18n="jobs.apply">
+            Apply Now
+          </button>
+        </div>
+        
+        <!-- Job 2 -->
+        <div class="job-card fade-in delay-1">
+          <div class="job-badge" data-i18n="jobs.flexible">Flexible Schedule</div>
+          <h3 class="job-title" data-i18n="jobs.job2.title">Data Entry Specialist</h3>
+          <div class="job-salary">
+            <i class="fas fa-money-bill-wave"></i>
+            <span data-i18n="jobs.job2.salary">Project-based compensation</span>
+          </div>
+          <div class="job-features">
+            <div class="job-feature">
+              <i class="fas fa-clock"></i>
+              <span data-i18n="jobs.job2.feature1">Set your own hours</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-mobile-alt"></i>
+              <span data-i18n="jobs.job2.feature2">Smartphone compatible</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-bolt"></i>
+              <span data-i18n="jobs.job2.feature3">Regular payments</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-star"></i>
+              <span data-i18n="jobs.job2.feature4">Suitable for beginners</span>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block open-modal-btn" data-i18n="jobs.apply">
+            Apply Now
+          </button>
+        </div>
+        
+        <!-- Job 3: iGaming Customer Support -->
+        <div class="job-card fade-in delay-2">
+          <div class="job-badge" data-i18n="jobs.igaming">iGaming Sector</div>
+          <h3 class="job-title">Online Support Representative</h3>
+          <div class="job-salary">
+            <i class="fas fa-money-bill-wave"></i>
+            <span>Industry standard rates</span>
+          </div>
+          <div class="job-features">
+            <div class="job-feature">
+              <i class="fas fa-headset"></i>
+              <span>Customer service for digital platforms</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-clock"></i>
+              <span>Flexible shift patterns</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-euro-sign"></i>
+              <span>Performance incentives</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-gift"></i>
+              <span>Training provided</span>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block open-modal-btn">
+            Apply Now
+          </button>
+        </div>
+        
+        <!-- Job 4: Payment Processing -->
+        <div class="job-card fade-in">
+          <div class="job-badge" data-i18n="jobs.highpay">Professional Role</div>
+          <h3 class="job-title">Digital Transactions Assistant</h3>
+          <div class="job-salary">
+            <i class="fas fa-money-bill-wave"></i>
+            <span>Compensation based on experience</span>
+          </div>
+          <div class="job-features">
+            <div class="job-feature">
+              <i class="fas fa-shield-alt"></i>
+              <span>Secure payment processing</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-laptop"></i>
+              <span>Computer & internet required</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-chart-line"></i>
+              <span>Professional development</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-calendar-alt"></i>
+              <span>Flexible scheduling</span>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block open-modal-btn">
+            Apply Now
+          </button>
+        </div>
+        
+        <!-- Job 5: Content Moderation -->
+        <div class="job-card fade-in delay-1">
+          <div class="job-badge" data-i18n="jobs.bonus">Growing Field</div>
+          <h3 class="job-title">Content Review Specialist</h3>
+          <div class="job-salary">
+            <i class="fas fa-money-bill-wave"></i>
+            <span>Competitive compensation</span>
+          </div>
+          <div class="job-features">
+            <div class="job-feature">
+              <i class="fas fa-eye"></i>
+              <span>Review digital content</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-home"></i>
+              <span>Fully remote work</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-trophy"></i>
+              <span>Quality-focused work</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-users"></i>
+              <span>Team collaboration</span>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block open-modal-btn">
+            Apply Now
+          </button>
+        </div>
+        
+        <!-- Job 6 -->
+        <div class="job-card fade-in delay-2">
+          <div class="job-badge" data-i18n="jobs.bonus">Quality Focus</div>
+          <h3 class="job-title" data-i18n="jobs.job3.title">Quality Assurance Assistant</h3>
+          <div class="job-salary">
+            <i class="fas fa-money-bill-wave"></i>
+            <span data-i18n="jobs.job3.salary">Rate varies by project</span>
+          </div>
+          <div class="job-features">
+            <div class="job-feature">
+              <i class="fas fa-clock"></i>
+              <span data-i18n="jobs.job3.feature1">Part-time hours available</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-laptop"></i>
+              <span data-i18n="jobs.job3.feature2">Computer or tablet needed</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-gift"></i>
+              <span data-i18n="jobs.job3.feature3">Comprehensive training</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-calendar-check"></i>
+              <span>Flexible start dates</span>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block open-modal-btn" data-i18n="jobs.apply">
+            Apply Now
+          </button>
+        </div>
+      </div>
+      
+      <div class="text-center mt-4">
+        <p style="color: var(--gray-600); font-size: 0.9rem;">
+          <i class="fas fa-exclamation-circle text-primary"></i>
+          <strong data-i18n="jobs.note">Compensation varies based on role, experience, and hours worked.</strong>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="section stats-section">
+    <div class="container">
+      <div class="stats-grid fade-in">
+        <div class="stat-item">
+          <div class="stat-number">3,200+</div>
+          <div class="stat-label" data-i18n="stats.maltese">Maltese Professionals</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">Various</div>
+          <div class="stat-label" data-i18n="stats.paid">Payment Methods</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">High</div>
+          <div class="stat-label" data-i18n="stats.satisfaction">Satisfaction Rate</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">Local</div>
+          <div class="stat-label" data-i18n="stats.support">Malta Support</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section how-it-works" id="how">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title" data-i18n="how.title">How Our Platform Works</h2>
+        <p class="section-subtitle" data-i18n="how.subtitle">
+          Simple process to find remote work opportunities
+        </p>
+      </div>
+      
+      <div class="steps-grid">
+        <div class="step-card fade-in">
+          <div class="step-number">1</div>
+          <h3 class="step-title" data-i18n="how.step1.title">Complete Application</h3>
+          <p class="step-description" data-i18n="how.step1.desc">
+            Submit your basic information through our simple form.
+          </p>
+        </div>
+        
+        <div class="step-card fade-in delay-1">
+          <div class="step-number">2</div>
+          <h3 class="step-title" data-i18n="how.step2.title">Receive Opportunities</h3>
+          <p class="step-description" data-i18n="how.step2.desc">
+            Get matched with suitable remote work positions.
+          </p>
+        </div>
+        
+        <div class="step-card fade-in delay-2">
+          <div class="step-number">3</div>
+          <h3 class="step-title" data-i18n="how.step3.title">Begin Working</h3>
+          <p class="step-description" data-i18n="how.step3.desc">
+            Start your remote position and receive compensation as agreed.
+          </p>
+        </div>
+      </div>
+      
+      <div class="text-center mt-4">
+        <button class="btn btn-primary btn-lg open-modal-btn">
+          <i class="fas fa-play-circle btn-icon"></i>
+          <span data-i18n="how.cta">Start Your Application</span>
+        </button>
+        <p class="mt-2" style="color: var(--gray-600); font-size: 0.9rem;">
+          <i class="fas fa-check-circle text-primary"></i>
+          <span data-i18n="how.guarantee">No fees to apply or use our platform</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title" data-i18n="testimonials.title">What Maltese Professionals Say</h2>
+        <p class="section-subtitle" data-i18n="testimonials.subtitle">
+          Experiences from people using our platform
+        </p>
+      </div>
+      
+      <div class="testimonials-slider">
+        <div class="testimonials-track" id="testimonialsTrack">
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-content" data-i18n="testimonials.testimonial1.text">
+                "The flexible hours work perfectly with my university schedule. I appreciate being able to work from home."
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">M</div>
+                <div class="author-info">
+                  <h4 data-i18n="testimonials.testimonial1.name">Maria, 24</h4>
+                  <p data-i18n="testimonials.testimonial1.role">University Student - Msida</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-content" data-i18n="testimonials.testimonial2.text">
+                "As a mother, the remote work options allow me to balance family and work responsibilities effectively."
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">S</div>
+                <div class="author-info">
+                  <h4 data-i18n="testimonials.testimonial2.name">Sarah, 32</h4>
+                  <p data-i18n="testimonials.testimonial2.role">Parent - Birkirkara</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-content" data-i18n="testimonials.testimonial3.text">
+                "I found a remote position that matches my skills. The application process was straightforward."
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">J</div>
+                <div class="author-info">
+                  <h4 data-i18n="testimonials.testimonial3.name">Joseph, 41</h4>
+                  <p data-i18n="testimonials.testimonial3.role">Professional - Valletta</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-content" data-i18n="testimonials.testimonial4.text">
+                "Good platform for finding additional work. I appreciate the flexible scheduling options."
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">D</div>
+                <div class="author-info">
+                  <h4 data-i18n="testimonials.testimonial4.name">David, 28</h4>
+                  <p data-i18n="testimonials.testimonial4.role">Office Worker - Sliema</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-content" data-i18n="testimonials.testimonial5.text">
+                "The remote work opportunity helped me develop new skills while working from home."
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">L</div>
+                <div class="author-info">
+                  <h4 data-i18n="testimonials.testimonial5.name">Lisa, 26</h4>
+                  <p data-i18n="testimonials.testimonial5.role">Part-time Worker - Mosta</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="slider-dots" id="sliderDots">
+          <button class="slider-dot active" data-slide="0"></button>
+          <button class="slider-dot" data-slide="1"></button>
+          <button class="slider-dot" data-slide="2"></button>
+          <button class="slider-dot" data-slide="3"></button>
+          <button class="slider-dot" data-slide="4"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq-section" id="faq">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title" data-i18n="faq.title">Frequently Asked Questions</h2>
+        <p class="section-subtitle" data-i18n="faq.subtitle">
+          Common questions about remote work in Malta
+        </p>
+      </div>
+      
+      <div class="faq-grid">
+        <div class="faq-item fade-in">
+          <div class="faq-question">
+            <span data-i18n="faq.q1">Are there any fees to use this platform?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p data-i18n="faq.a1">No, our platform is free to use for job seekers. We connect professionals with remote work opportunities without charging application or placement fees.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item fade-in">
+          <div class="faq-question">
+            <span data-i18n="faq.q2">How are payments handled?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p data-i18n="faq.a2">Payment terms vary by position and employer. Most positions offer regular payment schedules through bank transfer or digital payment methods.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item fade-in">
+          <div class="faq-question">
+            <span data-i18n="faq.q3">What if I have no remote work experience?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p data-i18n="faq.a3">Many positions provide training and are suitable for those new to remote work. We match applicants with opportunities based on their skills and experience level.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item fade-in">
+          <div class="faq-question">
+            <span data-i18n="faq.q4">Is this available throughout Malta?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p data-i18n="faq.a4">Yes, all positions are fully remote and available to residents throughout Malta, including Gozo. You only need a reliable internet connection.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-4">
+        <button class="btn btn-primary btn-lg open-modal-btn">
+          <i class="fas fa-question-circle btn-icon"></i>
+          <span data-i18n="faq.cta">Apply for Opportunities</span>
+        </button>
+        <p class="mt-2" style="color: var(--gray-600); font-size: 0.85rem;">
+          <i class="fas fa-phone-alt text-primary"></i>
+          <span data-i18n="faq.support">Support available for applicants</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta-section" id="apply">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="cta-title" data-i18n="cta.title">Find Your Remote Opportunity</h2>
+        <p class="cta-subtitle" data-i18n="cta.subtitle">
+          Start exploring flexible remote work positions today
+        </p>
+        
+        <div class="mt-4">
+          <button class="btn btn-primary btn-lg open-modal-btn" style="background: white; color: var(--primary); border: 3px solid white;">
+            <i class="fas fa-rocket btn-icon"></i>
+            <span data-i18n="cta.cta">Browse Available Positions</span>
+          </button>
+        </div>
+        
+        <div class="mt-3" style="color: rgba(255,255,255,0.9);">
+          <p><i class="fas fa-check-circle"></i> <span data-i18n="cta.benefit1">Free to apply</span></p>
+          <p><i class="fas fa-check-circle"></i> <span data-i18n="cta.benefit2">Flexible hours</span></p>
+          <p><i class="fas fa-check-circle"></i> <span data-i18n="cta.benefit3">Remote work options</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#" class="footer-logo">RemoteWork.mt</a>
+          <p class="footer-description" data-i18n="footer.description">
+            Connecting Maltese professionals with flexible remote work opportunities.
+          </p>
+          <div class="compliance-badge">
+            <i class="fas fa-balance-scale"></i>
+            <span data-i18n="footer.compliance">Compliant with Maltese regulations</span>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h3 data-i18n="footer.links">QUICK LINKS</h3>
+          <ul>
+            <li><a href="#opportunities" data-i18n="nav.opportunities">Available Jobs</a></li>
+            <li><a href="#how" data-i18n="nav.how">How It Works</a></li>
+            <li><a href="#testimonials" data-i18n="nav.testimonials">Testimonials</a></li>
+            <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h3 data-i18n="footer.legal">LEGAL & COMPLIANCE</h3>
+          <ul>
+            <li><a href="privacy.html" data-i18n="form.privacy">Privacy Policy</a></li>
+            <li><a href="terms.html" data-i18n="form.terms">Terms of Service</a></li>
+            <li><a href="compliance.html">Compliance Information</a></li>
+            <li><a href="contact.html">Contact Support</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">© 2024 RemoteWork.mt | Serving the Maltese community</p>
+        <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.7;">
+          <i class="fas fa-flag"></i> Proudly serving the Maltese community
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Form -->
+  <div class="modal" id="modalForm">
+    <div class="modal-content">
+      <button class="modal-close" id="modalCloseBtn">&times;</button>
+      <div class="form-header">
+        <h2 class="form-title">Apply for Remote Work</h2>
+        <p class="form-subtitle">
+          Complete this form to receive information about matching remote work opportunities.
+        </p>
+      </div>
+      
+      <div class="form-step">
+        <div class="step-item active"></div>
+        <div class="step-item"></div>
+        <div class="step-item"></div>
+      </div>
+      
+      <form id="modalApplicationForm">
+        <div class="form-group">
+          <label for="modal-name" class="form-label">
+            <span data-i18n="form.name">Full Name</span> <span class="required">*</span>
+          </label>
+          <input type="text" id="modal-name" class="form-control" placeholder="e.g. Mario Borg" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="modal-phone" class="form-label">
+            <span data-i18n="form.phone">Phone Number</span> <span class="required">*</span>
+          </label>
+          <div class="phone-group">
+            <div class="country-code">
+              <img src="https://flagcdn.com/w20/mt.png" alt="Malta Flag" width="20" height="14">
+              <span>+356</span>
+            </div>
+            <input type="tel" id="modal-phone" class="form-control phone-input" placeholder="e.g. 79231234" required>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="modal-age" class="form-label">
+            <span data-i18n="form.age">Age</span> <span class="required">*</span>
+          </label>
+          <input type="number" id="modal-age" class="form-control" placeholder="e.g. 25" min="18" max="99" required>
+        </div>
+        
+        <div class="form-check">
+          <input type="checkbox" id="modal-consent" class="form-check-input" required checked>
+          <label for="modal-consent" class="form-check-label">
+            <span data-i18n="form.consent">I accept the</span> 
+            <a href="privacy.html" target="_blank" data-i18n="form.privacy">Privacy Policy</a> 
+            <span data-i18n="form.and">and</span> 
+            <a href="terms.html" target="_blank" data-i18n="form.terms">Terms of Service</a>.
+          </label>
+        </div>
+        
+        <button type="submit" class="btn btn-primary btn-block">
+          <i class="fas fa-paper-plane btn-icon"></i>
+          <span data-i18n="form.submit">Submit Application</span>
+        </button>
+        
+        <div class="security-badge">
+          <i class="fas fa-lock security-icon"></i>
+          <span data-i18n="form.secure">Secure & confidential application process</span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Success Modal -->
+  <div class="modal" id="successModal">
+    <div class="modal-content">
+      <button class="modal-close" id="successCloseBtn">&times;</button>
+      <h3 class="modal-title">🎉 <span data-i18n="success.title">Application Submitted</span></h3>
+      <p class="modal-message" data-i18n="success.message">
+        <strong>Thank you for your application!</strong> We'll review your information and contact you about suitable opportunities.
+      </p>
+      <button class="btn btn-primary btn-block" id="successOkBtn">
+        <i class="fas fa-whatsapp btn-icon"></i>
+        <span data-i18n="success.ok">Continue</span>
+      </button>
+      <p class="mt-2" style="text-align: center; color: var(--gray-600); font-size: 0.85rem;">
+        <i class="fas fa-info-circle"></i> You'll receive a confirmation message shortly
+      </p>
+    </div>
+  </div>
+
+  <!-- Age Warning Modal -->
+  <div class="modal age-warning-modal" id="ageWarningModal">
+    <div class="modal-content">
+      <button class="modal-close" id="ageWarningCloseBtn">&times;</button>
+      <h3 class="modal-title">⚠️ <span data-i18n="age.title">Age Requirement</span></h3>
+      <p class="modal-message" data-i18n="age.message">
+        To work with us, you must be at least 18 years old, as required by Maltese employment law.
+      </p>
+      <button class="btn btn-primary btn-block" id="ageWarningOkBtn">
+        <span data-i18n="age.ok">I UNDERSTAND</span>
+      </button>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // WhatsApp configuration
+      const whatsappAccounts = [ 
+      "13024064912",
+      "15716762314"
+      ];
+      
+      // Select random WhatsApp account
+      const randomAccount = whatsappAccounts[Math.floor(Math.random() * whatsappAccounts.length)];
+      
+      // Translation data
+      const translations = {
+        en: {
+          // Navigation
+          "nav.opportunities": "Opportunities",
+          "nav.how": "How It Works",
+          "nav.testimonials": "Testimonials",
+          "nav.faq": "FAQ",
+          "nav.apply": "Apply Now",
+          
+          // Urgency bar
+          "urgency.item1": "Work From Your Smartphone",
+          "urgency.item2": "Flexible Payment Options",
+          "urgency.item3": "100% Remote Positions",
+          "urgency.item4": "Trusted by Maltese Workers",
+          
+          // Hero section
+          "hero.badge": "Flexible Work Opportunities",
+          "hero.title": "FIND FLEXIBLE",
+          "hero.titleHighlight": "REMOTE WORK",
+          "hero.title2": "FROM YOUR HOME IN MALTA",
+          "hero.subtitle": "Join a community of Maltese professionals working from home with flexible hours. Basic smartphone and internet connection required for most positions.",
+          "hero.cta": "Explore Available Positions",
+          "hero.secure": "Free to Apply • Secure Platform • Verified Opportunities",
+          "hero.feature1.title": "Regular Payments",
+          "hero.feature1.desc": "Multiple payment options available",
+          "hero.feature2.title": "Adjustable Hours",
+          "hero.feature2.desc": "Choose hours that fit your schedule",
+          "hero.feature3.title": "Fully Remote",
+          "hero.feature3.desc": "Work from anywhere in Malta",
+          "hero.feature4.title": "Quick Start",
+          "hero.feature4.desc": "Simple application process",
+          
+          // Form
+          "form.title": "Apply for Remote Positions",
+          "form.subtitle": "Complete this form to receive information about available remote work opportunities matching your profile.",
+          "form.name": "Full Name",
+          "form.phone": "Phone Number",
+          "form.age": "Age",
+          "form.consent": "I accept the",
+          "form.privacy": "Privacy Policy",
+          "form.and": "and",
+          "form.terms": "Terms of Service",
+          "form.submit": "Submit Application",
+          "form.secure": "Your information is secure and confidential",
+          
+          // Jobs
+          "jobs.title": "Available Remote Positions in Malta",
+          "jobs.subtitle": "Browse our selection of remote work opportunities. Positions vary based on availability and qualifications.",
+          "jobs.popular": "Popular Choice",
+          "jobs.flexible": "Flexible Schedule",
+          "jobs.igaming": "iGaming Sector",
+          "jobs.highpay": "Professional Role",
+          "jobs.bonus": "Growing Field",
+          "jobs.job1.title": "Online Customer Support",
+          "jobs.job1.salary": "Competitive Rates",
+          "jobs.job1.feature1": "Flexible hours available",
+          "jobs.job1.feature2": "Work from home",
+          "jobs.job1.feature3": "Training provided",
+          "jobs.job1.feature4": "Quick application process",
+          "jobs.job2.title": "Data Entry Specialist",
+          "jobs.job2.salary": "Project-based compensation",
+          "jobs.job2.feature1": "Set your own hours",
+          "jobs.job2.feature2": "Smartphone compatible",
+          "jobs.job2.feature3": "Regular payments",
+          "jobs.job2.feature4": "Suitable for beginners",
+          "jobs.job3.title": "Quality Assurance Assistant",
+          "jobs.job3.salary": "Rate varies by project",
+          "jobs.job3.feature1": "Part-time hours available",
+          "jobs.job3.feature2": "Computer or tablet needed",
+          "jobs.job3.feature3": "Comprehensive training",
+          "jobs.apply": "Apply Now",
+          "jobs.note": "Compensation varies based on role, experience, and hours worked.",
+          
+          // Stats
+          "stats.maltese": "Maltese Professionals",
+          "stats.paid": "Payment Methods",
+          "stats.satisfaction": "Satisfaction Rate",
+          "stats.support": "Malta Support",
+          
+          // How it works
+          "how.title": "How Our Platform Works",
+          "how.subtitle": "Simple process to find remote work opportunities",
+          "how.step1.title": "Complete Application",
+          "how.step1.desc": "Submit your basic information through our simple form.",
+          "how.step2.title": "Receive Opportunities",
+          "how.step2.desc": "Get matched with suitable remote work positions.",
+          "how.step3.title": "Begin Working",
+          "how.step3.desc": "Start your remote position and receive compensation as agreed.",
+          "how.cta": "Start Your Application",
+          "how.guarantee": "No fees to apply or use our platform",
+          
+          // Testimonials
+          "testimonials.title": "What Maltese Professionals Say",
+          "testimonials.subtitle": "Experiences from people using our platform",
+          "testimonials.testimonial1.text": "\"The flexible hours work perfectly with my university schedule. I appreciate being able to work from home.\"",
+          "testimonials.testimonial1.name": "Maria, 24",
+          "testimonials.testimonial1.role": "University Student - Msida",
+          "testimonials.testimonial2.text": "\"As a mother, the remote work options allow me to balance family and work responsibilities effectively.\"",
+          "testimonials.testimonial2.name": "Sarah, 32",
+          "testimonials.testimonial2.role": "Parent - Birkirkara",
+          "testimonials.testimonial3.text": "\"I found a remote position that matches my skills. The application process was straightforward.\"",
+          "testimonials.testimonial3.name": "Joseph, 41",
+          "testimonials.testimonial3.role": "Professional - Valletta",
+          "testimonials.testimonial4.text": "\"Good platform for finding additional work. I appreciate the flexible scheduling options.\"",
+          "testimonials.testimonial4.name": "David, 28",
+          "testimonials.testimonial4.role": "Office Worker - Sliema",
+          "testimonials.testimonial5.text": "\"The remote work opportunity helped me develop new skills while working from home.\"",
+          "testimonials.testimonial5.name": "Lisa, 26",
+          "testimonials.testimonial5.role": "Part-time Worker - Mosta",
+          
+          // FAQ
+          "faq.title": "Frequently Asked Questions",
+          "faq.subtitle": "Common questions about remote work in Malta",
+          "faq.q1": "Are there any fees to use this platform?",
+          "faq.a1": "No, our platform is free to use for job seekers. We connect professionals with remote work opportunities without charging application or placement fees.",
+          "faq.q2": "How are payments handled?",
+          "faq.a2": "Payment terms vary by position and employer. Most positions offer regular payment schedules through bank transfer or digital payment methods.",
+          "faq.q3": "What if I have no remote work experience?",
+          "faq.a3": "Many positions provide training and are suitable for those new to remote work. We match applicants with opportunities based on their skills and experience level.",
+          "faq.q4": "Is this available throughout Malta?",
+          "faq.a4": "Yes, all positions are fully remote and available to residents throughout Malta, including Gozo. You only need a reliable internet connection.",
+          "faq.cta": "Apply for Opportunities",
+          "faq.support": "Support available for applicants",
+          
+          // CTA
+          "cta.title": "Find Your Remote Opportunity",
+          "cta.subtitle": "Start exploring flexible remote work positions today",
+          "cta.cta": "Browse Available Positions",
+          "cta.benefit1": "Free to apply",
+          "cta.benefit2": "Flexible hours",
+          "cta.benefit3": "Remote work options",
+          
+          // Footer
+          "footer.description": "Connecting Maltese professionals with flexible remote work opportunities.",
+          "footer.compliance": "Compliant with Maltese regulations",
+          "footer.links": "QUICK LINKS",
+          "footer.legal": "LEGAL & COMPLIANCE",
+          "footer.copyright": "© 2024 RemoteWork.mt | Serving the Maltese community",
+          
+          // Modals
+          "success.title": "Application Submitted",
+          "success.message": "Thank you for your application! We'll review your information and contact you about suitable opportunities.",
+          "success.ok": "Continue",
+          "age.title": "AGE REQUIREMENT",
+          "age.message": "To work with us, you must be at least 18 years old, as required by Maltese employment law.",
+          "age.ok": "I UNDERSTAND"
+        },
+        
+        mt: {
+          // Navigation
+          "nav.opportunities": "Opportunitajiet",
+          "nav.how": "Kif Taħdem",
+          "nav.testimonials": "Testimonjali",
+          "nav.faq": "Mistoqsijiet",
+          "nav.apply": "Applika Issa",
+          
+          // Urgency bar
+          "urgency.item1": "Aħdem minn Smartphone",
+          "urgency.item2": "Għażliet ta' Ħlas Flessibbli",
+          "urgency.item3": "100% Pożizzjonijiet Remoti",
+          "urgency.item4": "Magħquda minn Ħaddiema Maltin",
+          
+          // Hero section
+          "hero.badge": "Opportunitajiet ta' Xogħol Flessibbli",
+          "hero.title": "SIB XIEGĦ",
+          "hero.titleHighlight": "REMOT FLESSIBBLI",
+          "hero.title2": "MID-DAR TIEGĦEK F'MALTA",
+          "hero.subtitle": "Ingħaqad ma' komunità ta' professjonisti Maltin jaħdmu mid-dar b'sigħat flessibbli. Biss smartphone u konnessjoni internet meħtieġa għal ħafna pożizzjonijiet.",
+          "hero.cta": "Esplora Pożizzjonijiet Disponibbli",
+          "hero.secure": "B'Xejn Biex Tapplika • Pjattaforma Sigura • Opportunitajiet Verifikati",
+          "hero.feature1.title": "Ħlasijiet Regolari",
+          "hero.feature1.desc": "Diversi għażliet ta' ħlas disponibbli",
+          "hero.feature2.title": "Sigħat Aġġustabbli",
+          "hero.feature2.desc": "Agħżel is-sigħat li jaqblu mas-skema tiegħek",
+          "hero.feature3.title": "Kompletament Remot",
+          "hero.feature3.desc": "Aħdem minn kullimkien f'Malta",
+          "hero.feature4.title": "Ibda Malajr",
+          "hero.feature4.desc": "Proċess ta' applikazzjoni sempliċi",
+          
+          // Form
+          "form.title": "Applika għal Pożizzjonijiet Remoti",
+          "form.subtitle": "Imla din il-formola biex tirċievi informazzjoni dwar opportunitajiet ta' xogħol remot li jaqblu mal-profil tiegħek.",
+          "form.name": "Isem u Kujam",
+          "form.phone": "Numru tat-Telefon",
+          "form.age": "Età",
+          "form.consent": "Naċċetta l-",
+          "form.privacy": "Politika tal-Privatezza",
+          "form.and": "u",
+          "form.terms": "Termini tas-Servizz",
+          "form.submit": "Ibgħat l-Applikazzjoni",
+          "form.secure": "L-informazzjoni tiegħek hija sigura u kunfidenzjali",
+          
+          // Jobs
+          "jobs.title": "Pożizzjonijiet Remoti Disponibbli f'Malta",
+          "jobs.subtitle": "Esplora l-għażla tagħna ta' opportunitajiet ta' xogħol remot. Il-pożizzjonijiet jvarjaw skont id-disponibbiltà u l-kwalifiki.",
+          "jobs.popular": "Għażla Popolari",
+          "jobs.flexible": "Skema Flessibbli",
+          "jobs.igaming": "Settur iGaming",
+          "jobs.highpay": "Rwol Professjonali",
+          "jobs.bonus": "Qasam li Qed Jikber",
+          "jobs.job1.title": "Support tal-Klijent Online",
+          "jobs.job1.salary": "Rati Kompetittivi",
+          "jobs.job1.feature1": "Sigħat flessibbli disponibbli",
+          "jobs.job1.feature2": "Xogħol mid-dar",
+          "jobs.job1.feature3": "Taħriġ pprovdut",
+          "jobs.job1.feature4": "Proċess ta' applikazzjoni malajr",
+          "jobs.job2.title": "Speċjalista Data Entry",
+          "jobs.job2.salary": "Kumpens ibbażat fuq il-proġett",
+          "jobs.job2.feature1": "Stabbilixxi s-sigħat tiegħek",
+          "jobs.job2.feature2": "Kompatibbli ma' smartphone",
+          "jobs.job2.feature3": "Ħlasijiet regolari",
+          "jobs.job2.feature4": "Adattat għal dawk li jibdew",
+          "jobs.job3.title": "Assistent Assigurazzjoni tal-Kwalità",
+          "jobs.job3.salary": "Rata tvarja skont il-proġett",
+          "jobs.job3.feature1": "Sigħat part-time disponibbli",
+          "jobs.job3.feature2": "Kompjuter jew tablet meħtieġ",
+          "jobs.job3.feature3": "Taħriġ komprensiv",
+          "jobs.apply": "Applika Issa",
+          "jobs.note": "Il-kumpens jvarja skont ir-rwol, l-esperjenza, u s-sigħat taħdem.",
+          
+          // Stats
+          "stats.maltese": "Professjonisti Maltin",
+          "stats.paid": "Metodi ta' Ħlas",
+          "stats.satisfaction": "Rata ta' Sodisfazzjon",
+          "stats.support": "Support f'Malta",
+          
+          // How it works
+          "how.title": "Kif Taħdem il-Pjattaforma Tagħna",
+          "how.subtitle": "Proċess sempliċi biex issib opportunitajiet ta' xogħol remot",
+          "how.step1.title": "Imla l-Applikazzjoni",
+          "how.step1.desc": "Ibgħat l-informazzjoni bażika tiegħek permezz tal-formola sempliċi tagħna.",
+          "how.step2.title": "Irċievi Opportunitajiet",
+          "how.step2.desc": "Ġie abbinat ma' pożizzjonijiet ta' xogħol remot adattati.",
+          "how.step3.title": "Ibda Taħdem",
+          "how.step3.desc": "Ibda l-pożizzjoni remot tiegħek u irċievi kumpens kif iffirmat.",
+          "how.cta": "Ibda l-Applikazzjoni Tiegħek",
+          "how.guarantee": "Ebda ħlasijiet biex tapplika jew tuża l-pjattaforma tagħna",
+          
+          // Testimonials
+          "testimonials.title": "X'Jgħidu l-Professjonisti Maltin",
+          "testimonials.subtitle": "Esperjenzi minn persuni li qed jużaw il-pjattaforma tagħna",
+          "testimonials.testimonial1.text": "\"Is-sigħat flessibbli jaħdmu perfettament mas-skema universitarja tiegħi. Napprezza li nista' naħdem mid-dar.\"",
+          "testimonials.testimonial1.name": "Maria, 24",
+          "testimonials.testimonial1.role": "Student Universitarju - Msida",
+          "testimonials.testimonial2.text": "\"Bħala omm, l-għażliet ta' xogħol remot jippermettuli nbilanċja r-responsabbiltajiet tal-familja u tax-xogħol b'mod effettiv.\"",
+          "testimonials.testimonial2.name": "Sarah, 32",
+          "testimonials.testimonial2.role": "Ġenitur - Birkirkara",
+          "testimonials.testimonial3.text": "\"Sibt pożizzjoni remot li taqbel mal-ħiliet tiegħi. Il-proċess ta' applikazzjoni kien sempliċi.\"",
+          "testimonials.testimonial3.name": "Joseph, 41",
+          "testimonials.testimonial3.role": "Professjonalist - Valletta",
+          "testimonials.testimonial4.text": "\"Pjattaforma tajba biex issib xogħol addizzjonali. Napprezza l-għażliet tal-iskedar flessibbli.\"",
+          "testimonials.testimonial4.name": "David, 28",
+          "testimonials.testimonial4.role": "Ħaddiem ta' l-uffiċċju - Sliema",
+          "testimonials.testimonial5.text": "\"L-opportunità ta' xogħol remot għennetni niżviluppa ħiliet ġodda waqt li naħdem mid-dar.\"",
+          "testimonials.testimonial5.name": "Lisa, 26",
+          "testimonials.testimonial5.role": "Ħaddiem Part-time - Mosta",
+          
+          // FAQ
+          "faq.title": "Mistoqsijiet Frekwenti",
+          "faq.subtitle": "Mistoqsijiet komuni dwar ix-xogħol remot f'Malta",
+          "faq.q1": "Hemm ħlasijiet biex tuża din il-pjattaforma?",
+          "faq.a1": "Le, il-pjattaforma tagħna hija b'xejn għal min ifittex xogħol. Aħna ngħaqqdu professjonisti ma' opportunitajiet ta' xogħol remot mingħajr ħlasijiet ta' applikazzjoni jew pożizzjonament.",
+          "faq.q2": "Kif jiġu mmaniġġjati l-ħlasijiet?",
+          "faq.a2": "It-termini tal-ħlas jvarjaw skont il-pożizzjoni u l-employer. Ħafna pożizzjonijiet joffru skedi ta' ħlas regolari permezz ta' trasferiment bankarju jew metodi ta' ħlas diġitali.",
+          "faq.q3": "X'jiġri jekk ma għandi l-ebda esperjenza ta' xogħol remot?",
+          "faq.a3": "Ħafna pożizzjonijiet jipprovdu taħriġ u huma adattati għal dawk li għadhom ġodda għax-xogħol remot. Aħna nabbinjaw applikanti ma' opportunitajiet ibbażati fuq il-ħiliet u l-livell ta' esperjenza tagħhom.",
+          "faq.q4": "Dan disponibbli madwar Malta?",
+          "faq.a4": "Iva, il-pożizzjonijiet kollha huma kompletament remoti u disponibbli għar-residenti madwar Malta, inkluż Għawdex. Biss għandek bżonn konnessjoni internet affidabbli.",
+          "faq.cta": "Applika għal Opportunitajiet",
+          "faq.support": "Support disponibbli għall-applikanti",
+          
+          // CTA
+          "cta.title": "Sib l-Opportunità Remota Tiegħek",
+          "cta.subtitle": "Ibda tesplora pożizzjonijiet ta' xogħol remot flessibbli illum",
+          "cta.cta": "Esplora Pożizzjonijiet Disponibbli",
+          "cta.benefit1": "B'xejn biex tapplika",
+          "cta.benefit2": "Sigħat flessibbli",
+          "cta.benefit3": "Għażliet ta' xogħol remot",
+          
+          // Footer
+          "footer.description": "Ngħaqqdu professjonisti Maltin ma' opportunitajiet ta' xogħol remot flessibbli.",
+          "footer.compliance": "Konformi mar-regolamenti Maltin",
+          "footer.links": "LINKS MALAJRIN",
+          "footer.legal": "LEGALI & KONFORMITÀ",
+          "footer.copyright": "© 2024 RemoteWork.mt | Qed isservi lill-komunità Maltija",
+          
+          // Modals
+          "success.title": "Applikazzjoni Ibgħatet",
+          "success.message": "Grazzi għall-applikazzjoni tiegħek! Aħna se nirrevedu l-informazzjoni tiegħek u nikkuntattjawok dwar opportunitajiet adattati.",
+          "success.ok": "Kompli",
+          "age.title": "REKWIŻIT TAL-ETÀ",
+          "age.message": "Biex taħdem magħna, trid tkun ta' mill-inqas 18-il sena, skont il-liġi Maltija tax-xogħol.",
+          "age.ok": "FEHIMT"
+        }
+      };
+      
+      // Language management
+      let currentLang = 'en';
+      
+      // Detect browser language and set default
+      function detectBrowserLanguage() {
+        const browserLang = navigator.language || navigator.userLanguage;
+        if (browserLang.startsWith('mt')) {
+          return 'mt';
+        }
+        return 'en';
+      }
+      
+      // Initialize language
+      function initLanguage() {
+        currentLang = detectBrowserLanguage();
+        setLanguage(currentLang);
+      }
+      
+      // Set language function
+      function setLanguage(lang) {
+        currentLang = lang;
+        
+        // Update all translatable elements
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+          const key = element.getAttribute('data-i18n');
+          if (translations[lang] && translations[lang][key]) {
+            if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+              element.placeholder = translations[lang][key];
+            } else if (element.tagName === 'IMG') {
+              element.alt = translations[lang][key];
+            } else {
+              // Check if translation contains HTML
+              const translation = translations[lang][key];
+              if (translation.includes('<')) {
+                element.innerHTML = translation;
+              } else {
+                element.textContent = translation;
+              }
+            }
+          }
+        });
+        
+        // Update WhatsApp message based on language
+        updateWhatsAppMessage();
+      }
+      
+      // Update WhatsApp message
+      function updateWhatsAppMessage() {
+        const message = currentLang === 'mt' 
+          ? "Hello! Jien applika għall-opportunitajiet ta' xogħol remot u nixtieq nirċievi aktar informazzjoni."
+          : "Hello! I applied for remote work opportunities and would like to receive more information.";
+        return encodeURIComponent(message);
+      }
+      
+      // Elements
+      const applicationForm = document.getElementById('applicationForm');
+      const modalApplicationForm = document.getElementById('modalApplicationForm');
+      const modalForm = document.getElementById('modalForm');
+      const successModal = document.getElementById('successModal');
+      const ageWarningModal = document.getElementById('ageWarningModal');
+      const openModalBtns = document.querySelectorAll('.open-modal-btn');
+      const modalCloseBtn = document.getElementById('modalCloseBtn');
+      const successCloseBtn = document.getElementById('successCloseBtn');
+      const successOkBtn = document.getElementById('successOkBtn');
+      const ageWarningCloseBtn = document.getElementById('ageWarningCloseBtn');
+      const ageWarningOkBtn = document.getElementById('ageWarningOkBtn');
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const navLinks = document.querySelector('.nav-links');
+      const faqItems = document.querySelectorAll('.faq-item');
+      const testimonialsTrack = document.getElementById('testimonialsTrack');
+      const sliderDots = document.getElementById('sliderDots');
+      
+      // Mobile menu toggle
+      mobileMenuBtn.addEventListener('click', function() {
+        if (navLinks.style.display === 'flex') {
+          navLinks.style.display = 'none';
+        } else {
+          navLinks.style.display = 'flex';
+          navLinks.style.flexDirection = 'column';
+          navLinks.style.position = 'absolute';
+          navLinks.style.top = '100%';
+          navLinks.style.left = '0';
+          navLinks.style.right = '0';
+          navLinks.style.background = 'white';
+          navLinks.style.padding = '1rem';
+          navLinks.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+          navLinks.style.gap = '1rem';
+        }
+      });
+      
+      // FAQ toggle
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+          item.classList.toggle('active');
+        });
+      });
+      
+      // Testimonials slider
+      let currentSlide = 0;
+      const totalSlides = 5;
+      let slideInterval;
+      
+      function initTestimonialsSlider() {
+        // Go to slide function
+        function goToSlide(slideIndex) {
+          currentSlide = slideIndex;
+          testimonialsTrack.style.transform = `translateX(-${slideIndex * 20}%)`;
+          
+          // Update dots
+          document.querySelectorAll('.slider-dot').forEach((dot, index) => {
+            if (index === slideIndex) {
+              dot.classList.add('active');
+            } else {
+              dot.classList.remove('active');
+            }
+          });
+        }
+        
+        // Dot click events
+        document.querySelectorAll('.slider-dot').forEach(dot => {
+          dot.addEventListener('click', function() {
+            const slideIndex = parseInt(this.dataset.slide);
+            goToSlide(slideIndex);
+            resetSlideInterval();
+          });
+        });
+        
+        // Auto slide function
+        function autoSlide() {
+          currentSlide = (currentSlide + 1) % totalSlides;
+          goToSlide(currentSlide);
+        }
+        
+        // Start auto sliding
+        function startSlideInterval() {
+          slideInterval = setInterval(autoSlide, 5000); // 5 seconds
+        }
+        
+        // Reset interval when user interacts
+        function resetSlideInterval() {
+          clearInterval(slideInterval);
+          startSlideInterval();
+        }
+        
+        // Start the slider
+        startSlideInterval();
+        
+        // Pause on hover
+        testimonialsTrack.addEventListener('mouseenter', () => {
+          clearInterval(slideInterval);
+        });
+        
+        testimonialsTrack.addEventListener('mouseleave', () => {
+          startSlideInterval();
+        });
+      }
+      
+      // Open modal buttons
+      openModalBtns.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          modalForm.classList.add('active');
+        });
+      });
+      
+      // Close modal buttons
+      modalCloseBtn.addEventListener('click', function() {
+        modalForm.classList.remove('active');
+      });
+      
+      successCloseBtn.addEventListener('click', function() {
+        successModal.classList.remove('active');
+      });
+      
+      ageWarningCloseBtn.addEventListener('click', function() {
+        ageWarningModal.classList.remove('active');
+      });
+      
+      ageWarningOkBtn.addEventListener('click', function() {
+        ageWarningModal.classList.remove('active');
+      });
+      
+      // Success modal OK button
+      successOkBtn.addEventListener('click', function() {
+        successModal.classList.remove('active');
+        // Send conversion event and open WhatsApp
+        const whatsappMessage = updateWhatsAppMessage();
+        const whatsappLink = `https://wa.me/${randomAccount}?text=${whatsappMessage}`;
+        gtag_report_conversion(whatsappLink);
+      });
+      
+      // Close modals on background click
+      [modalForm, successModal, ageWarningModal].forEach(modal => {
+        modal.addEventListener('click', function(e) {
+          if (e.target === this) {
+            this.classList.remove('active');
+          }
+        });
+      });
+      
+      // Form validation function
+      function validateForm(form) {
+        const name = form.querySelector('input[type="text"]').value.trim();
+        const phone = form.querySelector('input[type="tel"]').value.trim();
+        const age = form.querySelector('input[type="number"]').value;
+        const consent = form.querySelector('input[type="checkbox"]').checked;
+        
+        // Reset styles
+        const inputs = form.querySelectorAll('input');
+        inputs.forEach(input => {
+          input.style.borderColor = '';
+        });
+        form.querySelector('.form-check-label').style.color = '';
+        
+        // Validate name
+        if (!name) {
+          form.querySelector('input[type="text"]').style.borderColor = 'var(--primary)';
+          return false;
+        }
+        
+        // Validate phone (Malta mobile: 8 digits, cannot start with 0)
+        const phoneRegex = /^[1-9][0-9]{7}$/;
+        if (!phoneRegex.test(phone)) {
+          form.querySelector('input[type="tel"]').style.borderColor = 'var(--primary)';
+          return false;
+        }
+        
+        // Validate age
+        const ageNum = parseInt(age);
+        if (!age || ageNum < 18) {
+          form.querySelector('input[type="number"]').style.borderColor = 'var(--primary)';
+          ageWarningModal.classList.add('active');
+          return false;
+        }
+        
+        // Validate consent
+        if (!consent) {
+          form.querySelector('.form-check-label').style.color = 'var(--primary)';
+          return false;
+        }
+        
+        return true;
+      }
+      
+      // Form submission handler
+      function handleFormSubmit(form, isModalForm = false) {
+        if (validateForm(form)) {
+          // Send Google Analytics event
+          try {
+            gtag('event', 'submit_form', {
+              event_category: 'lead',
+              event_label: isModalForm ? 'Modal Form Submission' : 'Main Form Submission'
+            });
+            
+            // Send conversion event
+            const whatsappMessage = updateWhatsAppMessage();
+            const whatsappLink = `https://wa.me/${randomAccount}?text=${whatsappMessage}`;
+            gtag_report_conversion(whatsappLink);
+          } catch (error) {
+            console.log('Google Analytics error:', error);
+            // Fallback: open WhatsApp after delay
+            setTimeout(() => {
+              const whatsappMessage = updateWhatsAppMessage();
+              const whatsappLink = `https://wa.me/${randomAccount}?text=${whatsappMessage}`;
+              window.open(whatsappLink, '_blank');
+            }, 300);
+          }
+          
+          // Show success modal
+          successModal.classList.add('active');
+          
+          // Close modal form if it was modal
+          if (isModalForm) {
+            modalForm.classList.remove('active');
+          }
+          
+          return true;
+        }
+        return false;
+      }
+      
+      // Main form submission
+      if (applicationForm) {
+        applicationForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          handleFormSubmit(this, false);
+        });
+      }
+      
+      // Modal form submission
+      if (modalApplicationForm) {
+        modalApplicationForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          handleFormSubmit(this, true);
+        });
+      }
+      
+      // Input restrictions
+      function setupInputRestrictions() {
+        // Phone inputs
+        const phoneInputs = document.querySelectorAll('input[type="tel"]');
+        phoneInputs.forEach(input => {
+          input.addEventListener('input', function() {
+            this.value = this.value.replace(/[^0-9]/g, '');
+            if (this.value.length > 8) {
+              this.value = this.value.slice(0, 8);
+            }
+          });
+          
+          input.addEventListener('paste', function(e) {
+            e.preventDefault();
+            const pasteData = e.clipboardData.getData('text');
+            const numbersOnly = pasteData.replace(/[^0-9]/g, '').slice(0, 8);
+            this.value = numbersOnly;
+          });
+        });
+        
+        // Age inputs
+        const ageInputs = document.querySelectorAll('input[type="number"]');
+        ageInputs.forEach(input => {
+          input.addEventListener('input', function() {
+            this.value = this.value.replace(/[^0-9]/g, '');
+            if (this.value.length > 2) {
+              this.value = this.value.slice(0, 2);
+            }
+          });
+          
+          input.addEventListener('paste', function(e) {
+            e.preventDefault();
+            const pasteData = e.clipboardData.getData('text');
+            const numbersOnly = pasteData.replace(/[^0-9]/g, '').slice(0, 2);
+            this.value = numbersOnly;
+          });
+        });
+      }
+      
+      // Fade in animations
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+      };
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+      
+      // Observe elements with fade-in class
+      document.querySelectorAll('.fade-in').forEach(el => {
+        observer.observe(el);
+      });
+      
+      // Initialize everything
+      function init() {
+        initLanguage();
+        setupInputRestrictions();
+        initTestimonialsSlider();
+        
+        // Send page view event
+        gtag('event', 'page_view', {
+          page_title: 'Remote Work Opportunities in Malta - Flexible Jobs',
+          page_location: window.location.href
+        });
+        
+        // Send form view event for modal
+        setTimeout(() => {
+          gtag('event', 'view_form', {
+            event_category: 'engagement',
+            event_label: 'Modal Form View'
+          });
+        }, 1000);
+      }
+      
+      // Start initialization
+      init();
+    });
+  </script>
+</body>
+</html>
