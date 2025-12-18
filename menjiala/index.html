@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SWJOB Bangladesh | Remote Work Opportunities in Bangladesh</title>
+  <meta name="description" content="Find legitimate remote work opportunities in Bangladesh. Work from home with flexible hours. Customer service, data entry & digital positions available. Apply now for verified opportunities." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17630380718"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17630380718');
+    
+    // Enhanced conversion reporting with fallback
+    function gtag_report_conversion(url) {
+      const callback = function () {
+        if (typeof(url) != 'undefined') {
+          setTimeout(function() {
+            // Open WhatsApp link in new tab
+            const newWindow = window.open(url, '_blank');
+            if (!newWindow || newWindow.closed || typeof newWindow.closed == 'undefined') {
+              window.location.href = url;
+            }
+          }, 300);
+        }
+      };
+      
+      // Send conversion event with retry mechanism
+      let eventSent = false;
+      const maxAttempts = 2;
+      let attempts = 0;
+      
+      const sendEvent = () => {
+        try {
+          if (!eventSent) {
+            gtag('event', 'conversion', {
+              'send_to': 'AW-17630380718/_PyCCKKIuM4bEK6F6dZB',
+              'event_callback': callback,
+              'value': 1,
+              'currency': 'BDT'
+            });
+            
+            gtag('event', 'generate_lead', {
+              'currency': 'BDT',
+              'value': 1
+            });
+            eventSent = true;
+          }
+        } catch (e) {
+          attempts++;
+          if (attempts < maxAttempts) {
+            setTimeout(sendEvent, 100);
+          } else {
+            callback();
+          }
+        }
+      };
+      
+      sendEvent();
+      
+      // Fallback - always open WhatsApp after timeout
+      setTimeout(() => {
+        if (!eventSent) {
+          callback();
+        }
+      }, 1000);
+      
+      return false;
+    }
+  </script>
+  
+  <!-- 新增的样式（为了新增内容模块） -->
+  <style>
+    /* 孟加拉特色样式补充 */
+    .bangla-font {
+      font-family: 'Noto Sans Bengali', 'Hind Siliguri', sans-serif;
+    }
+    
+    .section-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #006a4e 0%, #006a4e 100%);
+      color: white;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    
+    .trust-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    
+    .trust-badge {
+      background: #f8f9fa;
+      border-radius: 10px;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 200px;
+    }
+    
+    .trust-badge i {
+      color: #006a4e;
+      font-size: 1.2rem;
+    }
+    
+    /* 孟加拉国旗配色 */
+    .bg-bangladesh-green {
+      background-color: #006a4e !important;
+    }
+    
+    .text-bangladesh-green {
+      color: #006a4e !important;
+    }
+    
+    .border-bangladesh-green {
+      border-color: #006a4e !important;
+    }
+    
+    /* 响应式调整 */
+    @media (max-width: 768px) {
+      .trust-badge {
+        min-width: 100%;
+      }
+      
+      .bangla-text-large {
+        font-size: 1.1rem !important;
+      }
+    }
+    
+    /* 头像样式调整 */
+    .author-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #006a4e 0%, #f42a41 100%);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="#" class="logo">
+          <div class="logo-icon">
+            <i class="fas fa-laptop-house"></i>
+          </div>
+          <span class="logo-text bangla-font" style="font-weight: 700;">দূরবর্তী কাজ</span>
+        </a>
+        
+        <div class="nav-links">
+          <a href="#opportunities" class="nav-link bangla-font">চাকরির সুযোগ</a>
+          <a href="#how" class="nav-link bangla-font">কিভাবে কাজ করে</a>
+          <a href="#testimonials" class="nav-link bangla-font">সমীক্ষা</a>
+          <a href="#faq" class="nav-link bangla-font">প্রশ্নোত্তর</a>
+          <a href="#" class="btn btn-primary nav-cta open-modal-btn bangla-font">
+            এখনই আবেদন করুন
+          </a>
+        </div>
+        
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Urgency Bar -->
+  <div class="urgency-bar" style="background: linear-gradient(90deg, #006a4e 0%, #f42a41 100%);">
+    <div class="container urgency-container">
+      <div class="urgency-scroll">
+        <div class="urgency-content">
+          <div class="urgency-item">
+            <span class="urgency-icon">📱</span>
+            <span class="bangla-font">স্মার্টফোন থেকে কাজ করুন</span>
+          </div>
+          <div class="urgency-item">
+            <span class="urgency-icon">💳</span>
+            <span class="bangla-font">বিভিন্ন পেমেন্ট অপশন</span>
+          </div>
+          <div class="urgency-item">
+            <span class="urgency-icon">🏠</span>
+            <span class="bangla-font">১০০% দূরবর্তী অবস্থান</span>
+          </div>
+          <div class="urgency-item">
+            <span class="urgency-icon">⭐</span>
+            <span class="bangla-font">বাংলাদেশীদের বিশ্বস্ত পছন্দ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="top">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content fade-in">
+          <div class="hero-badge" style="background: #f42a41;">
+            <i class="fas fa-bolt"></i>
+            <span class="bangla-font">নমনীয় কাজের সুযোগ</span>
+          </div>
+          
+          <h1 class="hero-title bangla-font" style="font-family: 'Hind Siliguri', sans-serif; font-weight: 700;">
+            <span>আবিষ্কার করুন নমনীয়</span> 
+            <span class="text-primary" style="color: #006a4e !important;">দূরবর্তী কাজ</span>
+            <br>
+            <span>আপনার বাংলাদেশের বাড়ি থেকে</span>
+          </h1>
+          
+          <p class="hero-subtitle bangla-font bangla-text-large">
+            বাংলাদেশের পেশাদারদের সম্প্রদায়ে যোগ দিন যারা বাড়ি থেকে নমনীয় সময়ে কাজ করে। 
+            বেশিরভাগ অবস্থানের জন্য শুধুমাত্র একটি মৌলিক স্মার্টফোন এবং ইন্টারনেট সংযোগ প্রয়োজন।
+          </p>
+          
+          <!-- Mobile CTA Button -->
+          <div class="mobile-cta">
+            <button class="btn btn-primary btn-lg btn-block open-modal-btn mb-2" style="background: #006a4e; border-color: #006a4e;">
+              <i class="fas fa-rocket btn-icon"></i>
+              <span class="bangla-font">উপলব্ধ পদগুলি অন্বেষণ করুন</span>
+            </button>
+            <p style="color: var(--gray-600); font-size: 0.85rem; font-weight: 600;">
+              <i class="fas fa-shield-alt" style="color: #006a4e;"></i>
+              <span class="bangla-font">বিনামূল্যে আবেদন • নিরাপদ প্ল্যাটফর্ম • যাচাইকৃত সুযোগ</span>
+            </p>
+          </div>
+          
+          <div class="hero-features">
+            <div class="feature-item">
+              <div class="feature-icon" style="background: #006a4e;">
+                <i class="fas fa-money-bill-wave"></i>
+              </div>
+              <div class="feature-text">
+                <strong class="bangla-font">নিয়মিত পেমেন্ট</strong>
+                <p class="bangla-font">বিভিন্ন পেমেন্ট অপশন উপলব্ধ</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon" style="background: #006a4e;">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="feature-text">
+                <strong class="bangla-font">সামঞ্জস্যযোগ্য ঘন্টা</strong>
+                <p class="bangla-font">আপনার সময়সূচী অনুযায়ী ঘন্টা চয়ন করুন</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon" style="background: #006a4e;">
+                <i class="fas fa-home"></i>
+              </div>
+              <div class="feature-text">
+                <strong class="bangla-font">সম্পূর্ণ দূরবর্তী</strong>
+                <p class="bangla-font">বাংলাদেশের যেকোনো জায়গা থেকে কাজ করুন</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon" style="background: #006a4e;">
+                <i class="fas fa-calendar-check"></i>
+              </div>
+              <div class="feature-text">
+                <strong class="bangla-font">দ্রুত শুরু</strong>
+                <p class="bangla-font">সহজ আবেদন প্রক্রিয়া</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Hero Form -->
+        <div class="hero-form form-card fade-in delay-1">
+          <div class="form-header">
+            <h2 class="form-title bangla-font">দূরবর্তী পদে আবেদন করুন</h2>
+            <p class="form-subtitle bangla-font">
+              আপনার প্রোফাইলের সাথে মেলে এমন উপলব্ধ দূরবর্তী কাজের সুযোগ সম্পর্কে তথ্য পেতে এই ফর্মটি পূরণ করুন।
+            </p>
+          </div>
+          
+          <div class="form-step">
+            <div class="step-item active"></div>
+            <div class="step-item"></div>
+            <div class="step-item"></div>
+          </div>
+          
+          <form id="applicationForm">
+            <div class="form-group">
+              <label for="name" class="form-label bangla-font">
+                <span>পূর্ণ নাম</span> <span class="required">*</span>
+              </label>
+              <input type="text" id="name" class="form-control" placeholder="উদাহরণ: রহমান আহমেদ" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone" class="form-label bangla-font">
+                <span>ফোন নম্বর</span> <span class="required">*</span>
+              </label>
+              <div class="phone-group">
+                <div class="country-code">
+                  <img src="https://flagcdn.com/w20/bd.png" alt="Bangladesh Flag" width="20" height="14">
+                  <span>+880</span>
+                </div>
+                <input type="tel" id="phone" class="form-control phone-input" placeholder="উদাহরণ: 1720123456" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="age" class="form-label bangla-font">
+                <span>বয়স</span> <span class="required">*</span>
+              </label>
+              <input type="number" id="age" class="form-control" placeholder="উদাহরণ: 25" min="18" max="99" required>
+            </div>
+            
+            <div class="form-check">
+              <input type="checkbox" id="consent" class="form-check-input" required checked>
+              <label for="consent" class="form-check-label bangla-font">
+                <span>আমি গ্রহণ করি</span> 
+                <a href="/privacy.html" target="_blank" class="bangla-font">গোপনীয়তা নীতি</a> 
+                <span>এবং</span> 
+                <a href="/userterms.html" target="_blank" class="bangla-font">সেবার শর্তাবলী</a>।
+              </label>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-block" style="background: #006a4e; border-color: #006a4e;">
+              <i class="fas fa-paper-plane btn-icon"></i>
+              <span class="bangla-font">আবেদন জমা দিন</span>
+            </button>
+            
+            <div class="security-badge">
+              <i class="fas fa-lock security-icon"></i>
+              <span class="bangla-font">আপনার তথ্য নিরাপদ এবং গোপনীয়</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Badges Section (新增) -->
+  <section class="section" style="background: #f8f9fa; padding: 2rem 0;">
+    <div class="container">
+      <div class="text-center mb-3">
+        <h3 class="bangla-font" style="color: #006a4e;">আমাদের বিশ্বস্ততা</h3>
+      </div>
+      <div class="trust-badges">
+        <div class="trust-badge">
+          <i class="fas fa-user-shield"></i>
+          <div>
+            <strong class="bangla-font">যাচাইকৃত সুযোগ</strong>
+            <p class="bangla-font" style="font-size: 0.85rem; margin-top: 5px;">সমস্ত তালিকাভুক্ত কাজ যাচাই করা হয়েছে</p>
+          </div>
+        </div>
+        <div class="trust-badge">
+          <i class="fas fa-lock"></i>
+          <div>
+            <strong class="bangla-font">নিরাপদ প্ল্যাটফর্ম</strong>
+            <p class="bangla-font" style="font-size: 0.85rem; margin-top: 5px;">আপনার তথ্য নিরাপদে সুরক্ষিত</p>
+          </div>
+        </div>
+        <div class="trust-badge">
+          <i class="fas fa-headset"></i>
+          <div>
+            <strong class="bangla-font">বাংলাদেশী সমর্থন</strong>
+            <p class="bangla-font" style="font-size: 0.85rem; margin-top: 5px;">স্থানীয় ভাষায় সহায়তা উপলব্ধ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Jobs Section -->
+  <section class="section jobs-section" id="opportunities">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-badge">যাচাইকৃত সুযোগ</div>
+        <h2 class="section-title bangla-font">বাংলাদেশে উপলব্ধ দূরবর্তী পদ</h2>
+        <p class="section-subtitle bangla-font">
+          আমাদের দূরবর্তী কাজের সুযোগের নির্বাচন ব্রাউজ করুন। পদগুলি প্রাপ্যতা এবং যোগ্যতার ভিত্তিতে পরিবর্তিত হয়।
+        </p>
+      </div>
+      
+      <div class="jobs-grid">
+        <!-- Job 1 -->
+        <div class="job-card fade-in">
+          <div class="job-badge bangla-font" style="background: #f42a41;">জনপ্রিয় পছন্দ</div>
+          <h3 class="job-title bangla-font">অনলাইন গ্রাহক সহায়তা</h3>
+          <div class="job-salary">
+            <i class="fas fa-money-bill-wave"></i>
+            <span class="bangla-font">প্রতিযোগিতামূলক হার</span>
+          </div>
+          <div class="job-features">
+            <div class="job-feature">
+              <i class="fas fa-clock"></i>
+              <span class="bangla-font">নমনীয় ঘন্টা উপলব্ধ</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-home"></i>
+              <span class="bangla-font">বাড়ি থেকে কাজ</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-graduation-cap"></i>
+              <span class="bangla-font">প্রশিক্ষণ প্রদান করা হয়</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-bolt"></i>
+              <span class="bangla-font">দ্রুত আবেদন প্রক্রিয়া</span>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block open-modal-btn bangla-font" style="background: #006a4e; border-color: #006a4e;">
+            এখনই আবেদন করুন
+          </button>
+        </div>
+        
+        <!-- Job 2 -->
+        <div class="job-card fade-in delay-1">
+          <div class="job-badge bangla-font" style="background: #f42a41;">নমনীয় সময়সূচী</div>
+          <h3 class="job-title bangla-font">ডেটা এন্ট্রি বিশেষজ্ঞ</h3>
+          <div class="job-salary">
+            <i class="fas fa-money-bill-wave"></i>
+            <span class="bangla-font">প্রকল্প-ভিত্তিক পারিশ্রমিক</span>
+          </div>
+          <div class="job-features">
+            <div class="job-feature">
+              <i class="fas fa-clock"></i>
+              <span class="bangla-font">আপনার নিজের ঘন্টা নির্ধারণ করুন</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-mobile-alt"></i>
+              <span class="bangla-font">স্মার্টফোন সামঞ্জস্যপূর্ণ</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-bolt"></i>
+              <span class="bangla-font">নিয়মিত পেমেন্ট</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-star"></i>
+              <span class="bangla-font">শিক্ষানবিশদের জন্য উপযুক্ত</span>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block open-modal-btn bangla-font" style="background: #006a4e; border-color: #006a4e;">
+            এখনই আবেদন করুন
+          </button>
+        </div>
+        
+        <!-- Job 3 -->
+        <div class="job-card fade-in delay-2">
+          <div class="job-badge bangla-font" style="background: #f42a41;">ডিজিটাল সেবা</div>
+          <h3 class="job-title bangla-font">অনলাইন সহায়তা প্রতিনিধি</h3>
+          <div class="job-salary">
+            <i class="fas fa-money-bill-wave"></i>
+            <span class="bangla-font">শিল্প মান হার</span>
+          </div>
+          <div class="job-features">
+            <div class="job-feature">
+              <i class="fas fa-headset"></i>
+              <span class="bangla-font">ডিজিটাল প্ল্যাটফর্মের জন্য গ্রাহক সেবা</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-clock"></i>
+              <span class="bangla-font">নমনীয় শিফ্ট প্যাটার্ন</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-chart-line"></i>
+              <span class="bangla-font">কর্মক্ষমতা প্রণোদনা</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-gift"></i>
+              <span class="bangla-font">প্রশিক্ষণ প্রদান করা হয়</span>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block open-modal-btn bangla-font" style="background: #006a4e; border-color: #006a4e;">
+            এখনই আবেদন করুন
+          </button>
+        </div>
+        
+        <!-- Job 4 -->
+        <div class="job-card fade-in">
+          <div class="job-badge bangla-font" style="background: #f42a41;">পেশাদার ভূমিকা</div>
+          <h3 class="job-title bangla-font">ডিজিটাল লেনদেন সহকারী</h3>
+          <div class="job-salary">
+            <i class="fas fa-money-bill-wave"></i>
+            <span class="bangla-font">অভিজ্ঞতার ভিত্তিতে পারিশ্রমিক</span>
+          </div>
+          <div class="job-features">
+            <div class="job-feature">
+              <i class="fas fa-shield-alt"></i>
+              <span class="bangla-font">নিরাপদ পেমেন্ট প্রক্রিয়াকরণ</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-laptop"></i>
+              <span class="bangla-font">কম্পিউটার ও ইন্টারনেট প্রয়োজন</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-chart-line"></i>
+              <span class="bangla-font">পেশাদার উন্নয়ন</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-calendar-alt"></i>
+              <span class="bangla-font">নমনীয় সময়সূচী</span>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block open-modal-btn bangla-font" style="background: #006a4e; border-color: #006a4e;">
+            এখনই আবেদন করুন
+          </button>
+        </div>
+        
+        <!-- Job 5 -->
+        <div class="job-card fade-in delay-1">
+          <div class="job-badge bangla-font" style="background: #f42a41;">বর্ধনশীল ক্ষেত্র</div>
+          <h3 class="job-title bangla-font">কন্টেন্ট পর্যালোচনা বিশেষজ্ঞ</h3>
+          <div class="job-salary">
+            <i class="fas fa-money-bill-wave"></i>
+            <span class="bangla-font">প্রতিযোগিতামূলক পারিশ্রমিক</span>
+          </div>
+          <div class="job-features">
+            <div class="job-feature">
+              <i class="fas fa-eye"></i>
+              <span class="bangla-font">ডিজিটাল কন্টেন্ট পর্যালোচনা করুন</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-home"></i>
+              <span class="bangla-font">সম্পূর্ণ দূরবর্তী কাজ</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-trophy"></i>
+              <span class="bangla-font">গুণমান-কেন্দ্রিক কাজ</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-users"></i>
+              <span class="bangla-font">দলগত সহযোগিতা</span>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block open-modal-btn bangla-font" style="background: #006a4e; border-color: #006a4e;">
+            এখনই আবেদন করুন
+          </button>
+        </div>
+        
+        <!-- Job 6 -->
+        <div class="job-card fade-in delay-2">
+          <div class="job-badge bangla-font" style="background: #f42a41;">গুণমান কেন্দ্রিক</div>
+          <h3 class="job-title bangla-font">গুণমান নিশ্চিতকরণ সহকারী</h3>
+          <div class="job-salary">
+            <i class="fas fa-money-bill-wave"></i>
+            <span class="bangla-font">প্রকল্প অনুযায়ী হার পরিবর্তিত হয়</span>
+          </div>
+          <div class="job-features">
+            <div class="job-feature">
+              <i class="fas fa-clock"></i>
+              <span class="bangla-font">খণ্ডকালীন ঘন্টা উপলব্ধ</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-laptop"></i>
+              <span class="bangla-font">কম্পিউটার বা ট্যাবলেট প্রয়োজন</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-gift"></i>
+              <span class="bangla-font">বিশদ প্রশিক্ষণ</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-calendar-check"></i>
+              <span class="bangla-font">নমনীয় শুরু তারিখ</span>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block open-modal-btn bangla-font" style="background: #006a4e; border-color: #006a4e;">
+            এখনই আবেদন করুন
+          </button>
+        </div>
+      </div>
+      
+      <div class="text-center mt-4">
+        <p style="color: var(--gray-600); font-size: 0.9rem;">
+          <i class="fas fa-exclamation-circle" style="color: #006a4e;"></i>
+          <strong class="bangla-font">পারিশ্রমিক ভূমিকা, অভিজ্ঞতা এবং কাজের ঘন্টার ভিত্তিতে পরিবর্তিত হয়।</strong>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="section stats-section" style="background: linear-gradient(135deg, #006a4e 0%, #f42a41 100%); color: white;">
+    <div class="container">
+      <div class="stats-grid fade-in">
+        <div class="stat-item">
+          <div class="stat-number">৫,০০০+</div>
+          <div class="stat-label bangla-font">বাংলাদেশী পেশাদার</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">বিভিন্ন</div>
+          <div class="stat-label bangla-font">পেমেন্ট পদ্ধতি</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">উচ্চ</div>
+          <div class="stat-label bangla-font">সন্তুষ্টি হার</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">স্থানীয়</div>
+          <div class="stat-label bangla-font">বাংলাদেশ সমর্থন</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section how-it-works" id="how">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title bangla-font">আমাদের প্ল্যাটফর্ম কিভাবে কাজ করে</h2>
+        <p class="section-subtitle bangla-font">
+          দূরবর্তী কাজের সুযোগ খুঁজে পেতে সহজ প্রক্রিয়া
+        </p>
+      </div>
+      
+      <div class="steps-grid">
+        <div class="step-card fade-in">
+          <div class="step-number" style="background: #006a4e;">১</div>
+          <h3 class="step-title bangla-font">আবেদন পূরণ করুন</h3>
+          <p class="step-description bangla-font">
+            আমাদের সহজ ফর্মের মাধ্যমে আপনার মৌলিক তথ্য জমা দিন।
+          </p>
+        </div>
+        
+        <div class="step-card fade-in delay-1">
+          <div class="step-number" style="background: #006a4e;">২</div>
+          <h3 class="step-title bangla-font">সুযোগ গ্রহণ করুন</h3>
+          <p class="step-description bangla-font">
+            উপযুক্ত দূরবর্তী কাজের অবস্থানের সাথে মিলিত হন।
+          </p>
+        </div>
+        
+        <div class="step-card fade-in delay-2">
+          <div class="step-number" style="background: #006a4e;">৩</div>
+          <h3 class="step-title bangla-font">কাজ শুরু করুন</h3>
+          <p class="step-description bangla-font">
+            আপনার দূরবর্তী অবস্থান শুরু করুন এবং সম্মত হিসাবে পারিশ্রমিক পান।
+          </p>
+        </div>
+      </div>
+      
+      <div class="text-center mt-4">
+        <button class="btn btn-primary btn-lg open-modal-btn" style="background: #006a4e; border-color: #006a4e;">
+          <i class="fas fa-play-circle btn-icon"></i>
+          <span class="bangla-font">আপনার আবেদন শুরু করুন</span>
+        </button>
+        <p class="mt-2" style="color: var(--gray-600); font-size: 0.9rem;">
+          <i class="fas fa-check-circle" style="color: #006a4e;"></i>
+          <span class="bangla-font">আবেদন করতে বা আমাদের প্ল্যাটফর্ম ব্যবহার করতে কোন ফি নেই</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title bangla-font">বাংলাদেশী পেশাদাররা কী বলেন</h2>
+        <p class="section-subtitle bangla-font">
+          আমাদের প্ল্যাটফর্ম ব্যবহারকারী মানুষের অভিজ্ঞতা
+        </p>
+      </div>
+      
+      <div class="testimonials-slider">
+        <div class="testimonials-track" id="testimonialsTrack">
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-content bangla-font">
+                "নমনীয় ঘন্টাগুলি আমার বিশ্ববিদ্যালয়ের সময়সূচীর সাথে পুরোপুরি কাজ করে। আমি বাড়ি থেকে কাজ করতে পারার জন্য প্রশংসা করি।"
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">র</div>
+                <div class="author-info">
+                  <h4 class="bangla-font">রহিমা, ২৪</h4>
+                  <p class="bangla-font">বিশ্ববিদ্যালয়ের ছাত্রী - ঢাকা</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-content bangla-font">
+                "মা হিসাবে, দূরবর্তী কাজের বিকল্পগুলি আমাকে পরিবার এবং কাজের দায়িত্ব কার্যকরভাবে ভারসাম্য বজায় রাখতে দেয়।"
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">স</div>
+                <div class="author-info">
+                  <h4 class="bangla-font">সালমা, ৩২</h4>
+                  <p class="bangla-font">পিতামাতা - চট্টগ্রাম</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-content bangla-font">
+                "আমি আমার দক্ষতার সাথে মেলে এমন একটি দূরবর্তী অবস্থান পেয়েছি। আবেদন প্রক্রিয়াটি সরল ছিল।"
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">জ</div>
+                <div class="author-info">
+                  <h4 class="bangla-font">জাহিদ, ৪১</h4>
+                  <p class="bangla-font">পেশাদার - সিলেট</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-content bangla-font">
+                "অতিরিক্ত কাজ খুঁজে পেতে ভাল প্ল্যাটফর্ম। আমি নমনীয় সময়সূচী বিকল্পগুলির প্রশংসা করি।"
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">দ</div>
+                <div class="author-info">
+                  <h4 class="bangla-font">দিপু, ২৮</h4>
+                  <p class="bangla-font">অফিস কর্মী - খুলনা</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-content bangla-font">
+                "দূরবর্তী কাজের সুযোগটি বাড়ি থেকে কাজ করার সময় নতুন দক্ষতা বিকাশ করতে আমাকে সাহায্য করেছে।"
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">ল</div>
+                <div class="author-info">
+                  <h4 class="bangla-font">লিমা, ২৬</h4>
+                  <p class="bangla-font">খণ্ডকালীন কর্মী - রাজশাহী</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="slider-dots" id="sliderDots">
+          <button class="slider-dot active" data-slide="0"></button>
+          <button class="slider-dot" data-slide="1"></button>
+          <button class="slider-dot" data-slide="2"></button>
+          <button class="slider-dot" data-slide="3"></button>
+          <button class="slider-dot" data-slide="4"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq-section" id="faq">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title bangla-font">প্রায়শই জিজ্ঞাসিত প্রশ্ন</h2>
+        <p class="section-subtitle bangla-font">
+          বাংলাদেশে দূরবর্তী কাজ সম্পর্কে সাধারণ প্রশ্ন
+        </p>
+      </div>
+      
+      <div class="faq-grid">
+        <div class="faq-item fade-in">
+          <div class="faq-question">
+            <span class="bangla-font">এই প্ল্যাটফর্ম ব্যবহার করতে কোন ফি আছে?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p class="bangla-font">না, চাকরি খোঁজাদের জন্য আমাদের প্ল্যাটফর্ম বিনামূল্যে ব্যবহারযোগ্য। আমরা আবেদন বা প্লেসমেন্ট ফি ছাড়াই পেশাদারদের দূরবর্তী কাজের সুযোগের সাথে সংযুক্ত করি।</p>
+          </div>
+        </div>
+        
+        <div class="faq-item fade-in">
+          <div class="faq-question">
+            <span class="bangla-font">পেমেন্ট কিভাবে হ্যান্ডেল করা হয়?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p class="bangla-font">পেমেন্ট শর্তাবলী অবস্থান এবং নিয়োগকর্তার দ্বারা পরিবর্তিত হয়। বেশিরভাগ অবস্থান ব্যাংক ট্রান্সফার বা ডিজিটাল পেমেন্ট পদ্ধতির মাধ্যমে নিয়মিত পেমেন্ট সময়সূচী অফার করে।</p>
+          </div>
+        </div>
+        
+        <div class="faq-item fade-in">
+          <div class="faq-question">
+            <span class="bangla-font">যদি আমার দূরবর্তী কাজের অভিজ্ঞতা না থাকে?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p class="bangla-font">অনেক অবস্থান প্রশিক্ষণ প্রদান করে এবং যারা দূরবর্তী কাজে নতুন তাদের জন্য উপযুক্ত। আমরা আবেদনকারীদের তাদের দক্ষতা এবং অভিজ্ঞতা স্তরের ভিত্তিতে সুযোগের সাথে মিলিত করি।</p>
+          </div>
+        </div>
+        
+        <div class="faq-item fade-in">
+          <div class="faq-question">
+            <span class="bangla-font">এটি সারা বাংলাদেশে উপলব্ধ?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p class="bangla-font">হ্যাঁ, সমস্ত অবস্থান সম্পূর্ণ দূরবর্তী এবং বাংলাদেশ জুড়ে বাসিন্দাদের জন্য উপলব্ধ। আপনার শুধুমাত্র একটি নির্ভরযোগ্য ইন্টারনেট সংযোগ প্রয়োজন।</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-4">
+        <button class="btn btn-primary btn-lg open-modal-btn" style="background: #006a4e; border-color: #006a4e;">
+          <i class="fas fa-question-circle btn-icon"></i>
+          <span class="bangla-font">সুযোগের জন্য আবেদন করুন</span>
+        </button>
+        <p class="mt-2" style="color: var(--gray-600); font-size: 0.85rem;">
+          <i class="fas fa-phone-alt" style="color: #006a4e;"></i>
+          <span class="bangla-font">আবেদনকারীদের জন্য সমর্থন উপলব্ধ</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta-section" id="apply" style="background: linear-gradient(135deg, #006a4e 0%, #f42a41 100%);">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="cta-title bangla-font" style="color: white;">আপনার দূরবর্তী সুযোগ খুঁজুন</h2>
+        <p class="cta-subtitle bangla-font" style="color: rgba(255,255,255,0.9);">
+          আজই নমনীয় দূরবর্তী কাজের অবস্থান অন্বেষণ শুরু করুন
+        </p>
+        
+        <div class="mt-4">
+          <button class="btn btn-primary btn-lg open-modal-btn" style="background: white; color: #006a4e; border: 3px solid white; font-weight: 600;">
+            <i class="fas fa-rocket btn-icon"></i>
+            <span class="bangla-font">উপলব্ধ পদ ব্রাউজ করুন</span>
+          </button>
+        </div>
+        
+        <div class="mt-3" style="color: rgba(255,255,255,0.9);">
+          <p><i class="fas fa-check-circle"></i> <span class="bangla-font">আবেদন করতে বিনামূল্যে</span></p>
+          <p><i class="fas fa-check-circle"></i> <span class="bangla-font">নমনীয় ঘন্টা</span></p>
+          <p><i class="fas fa-check-circle"></i> <span class="bangla-font">দূরবর্তী কাজের বিকল্প</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#" class="footer-logo bangla-font">দূরবর্তীকাজ.বিডি</a>
+          <p class="footer-description bangla-font">
+            বাংলাদেশী পেশাদারদের নমনীয় দূরবর্তী কাজের সুযোগের সাথে সংযুক্ত করা।
+          </p>
+          <div class="compliance-badge">
+            <i class="fas fa-balance-scale"></i>
+            <span class="bangla-font">বাংলাদেশী বিধিমালা অনুসারে সম্মতি</span>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h3 class="bangla-font">দ্রুত লিঙ্ক</h3>
+          <ul>
+            <li><a href="#opportunities" class="bangla-font">উপলব্ধ চাকরি</a></li>
+            <li><a href="#how" class="bangla-font">কিভাবে কাজ করে</a></li>
+            <li><a href="#testimonials" class="bangla-font">সমীক্ষা</a></li>
+            <li><a href="#faq" class="bangla-font">প্রশ্নোত্তর</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h3 class="bangla-font">আইনি ও সম্মতি</h3>
+          <ul>
+            <li><a href="/privacy.html" class="bangla-font">গোপনীয়তা নীতি</a></li>
+            <li><a href="/userterms.html" class="bangla-font">সেবার শর্তাবলী</a></li>
+            <li><a href="/compliance.html" class="bangla-font">সম্মতি তথ্য</a></li>
+            <li><a href="/contact.html" class="bangla-font">যোগাযোগ সমর্থন</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="bangla-font">© ২০২৪ দূরবর্তীকাজ.বিডি | বাংলাদেশী সম্প্রদায়ের সেবা করছি</p>
+        <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.7;">
+          <i class="fas fa-flag"></i> <span class="bangla-font">বাংলাদেশী সম্প্রদায়ের সেবায় গর্বিত</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Form -->
+  <div class="modal" id="modalForm">
+    <div class="modal-content">
+      <button class="modal-close" id="modalCloseBtn">&times;</button>
+      <div class="form-header">
+        <h2 class="form-title bangla-font">দূরবর্তী কাজের জন্য আবেদন করুন</h2>
+        <p class="form-subtitle bangla-font">
+          মিলিত দূরবর্তী কাজের সুযোগ সম্পর্কে তথ্য পেতে এই ফর্মটি পূরণ করুন।
+        </p>
+      </div>
+      
+      <div class="form-step">
+        <div class="step-item active"></div>
+        <div class="step-item"></div>
+        <div class="step-item"></div>
+      </div>
+      
+      <form id="modalApplicationForm">
+        <div class="form-group">
+          <label for="modal-name" class="form-label bangla-font">
+            <span>পূর্ণ নাম</span> <span class="required">*</span>
+          </label>
+          <input type="text" id="modal-name" class="form-control" placeholder="উদাহরণ: রহমান আহমেদ" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="modal-phone" class="form-label bangla-font">
+            <span>ফোন নম্বর</span> <span class="required">*</span>
+          </label>
+          <div class="phone-group">
+            <div class="country-code">
+              <img src="https://flagcdn.com/w20/bd.png" alt="Bangladesh Flag" width="20" height="14">
+              <span>+880</span>
+            </div>
+            <input type="tel" id="modal-phone" class="form-control phone-input" placeholder="উদাহরণ: 1720123456" required>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="modal-age" class="form-label bangla-font">
+            <span>বয়স</span> <span class="required">*</span>
+          </label>
+          <input type="number" id="modal-age" class="form-control" placeholder="উদাহরণ: 25" min="18" max="99" required>
+        </div>
+        
+        <div class="form-check">
+          <input type="checkbox" id="modal-consent" class="form-check-input" required checked>
+          <label for="modal-consent" class="form-check-label bangla-font">
+            <span>আমি গ্রহণ করি</span> 
+            <a href="/privacy.html" target="_blank" class="bangla-font">গোপনীয়তা নীতি</a> 
+            <span>এবং</span> 
+            <a href="/userterms.html" target="_blank" class="bangla-font">সেবার শর্তাবলী</a>।
+          </label>
+        </div>
+        
+        <button type="submit" class="btn btn-primary btn-block" style="background: #006a4e; border-color: #006a4e;">
+          <i class="fas fa-paper-plane btn-icon"></i>
+          <span class="bangla-font">আবেদন জমা দিন</span>
+        </button>
+        
+        <div class="security-badge">
+          <i class="fas fa-lock security-icon"></i>
+          <span class="bangla-font">নিরাপদ ও গোপনীয় আবেদন প্রক্রিয়া</span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Success Modal -->
+  <div class="modal" id="successModal">
+    <div class="modal-content">
+      <button class="modal-close" id="successCloseBtn">&times;</button>
+      <h3 class="modal-title">🎉 <span class="bangla-font">আবেদন জমা পড়েছে</span></h3>
+      <p class="modal-message bangla-font">
+        <strong>আপনার আবেদনের জন্য ধন্যবাদ!</strong> আমরা আপনার তথ্য পর্যালোচনা করব এবং উপযুক্ত সুযোগ সম্পর্কে আপনার সাথে যোগাযোগ করব।
+      </p>
+      <button class="btn btn-primary btn-block" id="successOkBtn" style="background: #006a4e; border-color: #006a4e;">
+        <i class="fas fa-whatsapp btn-icon"></i>
+        <span class="bangla-font">চলুন</span>
+      </button>
+      <p class="mt-2" style="text-align: center; color: var(--gray-600); font-size: 0.85rem;">
+        <i class="fas fa-info-circle"></i> <span class="bangla-font">আপনি শীঘ্রই একটি নিশ্চিতকরণ বার্তা পাবেন</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Age Warning Modal -->
+  <div class="modal age-warning-modal" id="ageWarningModal">
+    <div class="modal-content">
+      <button class="modal-close" id="ageWarningCloseBtn">&times;</button>
+      <h3 class="modal-title">⚠️ <span class="bangla-font">বয়স প্রয়োজনীয়তা</span></h3>
+      <p class="modal-message bangla-font">
+        আমাদের সাথে কাজ করার জন্য, বাংলাদেশের কর্মসংস্থান আইন অনুযায়ী আপনাকে কমপক্ষে 18 বছর বয়সী হতে হবে।
+      </p>
+      <button class="btn btn-primary btn-block" id="ageWarningOkBtn" style="background: #006a4e; border-color: #006a4e;">
+        <span class="bangla-font">আমি বুঝতে পেরেছি</span>
+      </button>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // WhatsApp configuration for Bangladesh
+      const whatsappAccounts = [ 
+        "8801234567890",
+        "8809876543210"
+      ];
+      
+      // Select random WhatsApp account
+      const randomAccount = whatsappAccounts[Math.floor(Math.random() * whatsappAccounts.length)];
+      
+      // Elements
+      const applicationForm = document.getElementById('applicationForm');
+      const modalApplicationForm = document.getElementById('modalApplicationForm');
+      const modalForm = document.getElementById('modalForm');
+      const successModal = document.getElementById('successModal');
+      const ageWarningModal = document.getElementById('ageWarningModal');
+      const openModalBtns = document.querySelectorAll('.open-modal-btn');
+      const modalCloseBtn = document.getElementById('modalCloseBtn');
+      const successCloseBtn = document.getElementById('successCloseBtn');
+      const successOkBtn = document.getElementById('successOkBtn');
+      const ageWarningCloseBtn = document.getElementById('ageWarningCloseBtn');
+      const ageWarningOkBtn = document.getElementById('ageWarningOkBtn');
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const navLinks = document.querySelector('.nav-links');
+      const faqItems = document.querySelectorAll('.faq-item');
+      const testimonialsTrack = document.getElementById('testimonialsTrack');
+      const sliderDots = document.getElementById('sliderDots');
+      
+      // Mobile menu toggle
+      mobileMenuBtn.addEventListener('click', function() {
+        if (navLinks.style.display === 'flex') {
+          navLinks.style.display = 'none';
+        } else {
+          navLinks.style.display = 'flex';
+          navLinks.style.flexDirection = 'column';
+          navLinks.style.position = 'absolute';
+          navLinks.style.top = '100%';
+          navLinks.style.left = '0';
+          navLinks.style.right = '0';
+          navLinks.style.background = 'white';
+          navLinks.style.padding = '1rem';
+          navLinks.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+          navLinks.style.gap = '1rem';
+        }
+      });
+      
+      // FAQ toggle
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+          item.classList.toggle('active');
+        });
+      });
+      
+      // Testimonials slider
+      let currentSlide = 0;
+      const totalSlides = 5;
+      let slideInterval;
+      
+      function initTestimonialsSlider() {
+        // Go to slide function
+        function goToSlide(slideIndex) {
+          currentSlide = slideIndex;
+          testimonialsTrack.style.transform = `translateX(-${slideIndex * 20}%)`;
+          
+          // Update dots
+          document.querySelectorAll('.slider-dot').forEach((dot, index) => {
+            if (index === slideIndex) {
+              dot.classList.add('active');
+            } else {
+              dot.classList.remove('active');
+            }
+          });
+        }
+        
+        // Dot click events
+        document.querySelectorAll('.slider-dot').forEach(dot => {
+          dot.addEventListener('click', function() {
+            const slideIndex = parseInt(this.dataset.slide);
+            goToSlide(slideIndex);
+            resetSlideInterval();
+          });
+        });
+        
+        // Auto slide function
+        function autoSlide() {
+          currentSlide = (currentSlide + 1) % totalSlides;
+          goToSlide(currentSlide);
+        }
+        
+        // Start auto sliding
+        function startSlideInterval() {
+          slideInterval = setInterval(autoSlide, 5000); // 5 seconds
+        }
+        
+        // Reset interval when user interacts
+        function resetSlideInterval() {
+          clearInterval(slideInterval);
+          startSlideInterval();
+        }
+        
+        // Start the slider
+        startSlideInterval();
+        
+        // Pause on hover
+        testimonialsTrack.addEventListener('mouseenter', () => {
+          clearInterval(slideInterval);
+        });
+        
+        testimonialsTrack.addEventListener('mouseleave', () => {
+          startSlideInterval();
+        });
+      }
+      
+      // Open modal buttons
+      openModalBtns.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          modalForm.classList.add('active');
+        });
+      });
+      
+      // Close modal buttons
+      modalCloseBtn.addEventListener('click', function() {
+        modalForm.classList.remove('active');
+      });
+      
+      successCloseBtn.addEventListener('click', function() {
+        successModal.classList.remove('active');
+      });
+      
+      ageWarningCloseBtn.addEventListener('click', function() {
+        ageWarningModal.classList.remove('active');
+      });
+      
+      ageWarningOkBtn.addEventListener('click', function() {
+        ageWarningModal.classList.remove('active');
+      });
+      
+      // Success modal OK button - Opens WhatsApp
+      successOkBtn.addEventListener('click', function() {
+        successModal.classList.remove('active');
+        
+        // Create WhatsApp message in Bengali
+        const whatsappMessage = encodeURIComponent("হ্যালো! আমি দূরবর্তী কাজের সুযোগের জন্য আবেদন করেছি এবং আরও তথ্য পেতে চাই।");
+        const whatsappLink = `https://wa.me/${randomAccount}?text=${whatsappMessage}`;
+        
+        // Send Google Analytics conversion event
+        gtag_report_conversion(whatsappLink);
+      });
+      
+      // Close modals on background click
+      [modalForm, successModal, ageWarningModal].forEach(modal => {
+        modal.addEventListener('click', function(e) {
+          if (e.target === this) {
+            this.classList.remove('active');
+          }
+        });
+      });
+      
+      // Form validation function for Bangladesh
+      function validateForm(form) {
+        const name = form.querySelector('input[type="text"]').value.trim();
+        const phone = form.querySelector('input[type="tel"]').value.trim();
+        const age = form.querySelector('input[type="number"]').value;
+        const consent = form.querySelector('input[type="checkbox"]').checked;
+        
+        // Reset styles
+        const inputs = form.querySelectorAll('input');
+        inputs.forEach(input => {
+          input.style.borderColor = '';
+        });
+        form.querySelector('.form-check-label').style.color = '';
+        
+        // Validate name
+        if (!name) {
+          form.querySelector('input[type="text"]').style.borderColor = '#006a4e';
+          return false;
+        }
+        
+        // Validate phone (Bangladesh mobile: 11 digits, starts with 01)
+        const phoneRegex = /^01[3-9]\d{8}$/;
+        if (!phoneRegex.test(phone)) {
+          form.querySelector('input[type="tel"]').style.borderColor = '#006a4e';
+          return false;
+        }
+        
+        // Validate age
+        const ageNum = parseInt(age);
+        if (!age || ageNum < 18) {
+          form.querySelector('input[type="number"]').style.borderColor = '#006a4e';
+          ageWarningModal.classList.add('active');
+          return false;
+        }
+        
+        // Validate consent
+        if (!consent) {
+          form.querySelector('.form-check-label').style.color = '#006a4e';
+          return false;
+        }
+        
+        return true;
+      }
+      
+      // Form submission handler
+      function handleFormSubmit(form, isModalForm = false) {
+        if (validateForm(form)) {
+          // Send Google Analytics event
+          try {
+            gtag('event', 'submit_form', {
+              event_category: 'lead',
+              event_label: isModalForm ? 'Modal Form Submission' : 'Main Form Submission'
+            });
+          } catch (error) {
+            console.log('Google Analytics error:', error);
+          }
+          
+          // Show success modal (WhatsApp will open from success modal button)
+          successModal.classList.add('active');
+          
+          // Close modal form if it was modal
+          if (isModalForm) {
+            modalForm.classList.remove('active');
+          }
+          
+          return true;
+        }
+        return false;
+      }
+      
+      // Main form submission
+      if (applicationForm) {
+        applicationForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          handleFormSubmit(this, false);
+        });
+      }
+      
+      // Modal form submission
+      if (modalApplicationForm) {
+        modalApplicationForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          handleFormSubmit(this, true);
+        });
+      }
+      
+      // Input restrictions for Bangladesh
+      function setupInputRestrictions() {
+        // Phone inputs
+        const phoneInputs = document.querySelectorAll('input[type="tel"]');
+        phoneInputs.forEach(input => {
+          input.addEventListener('input', function() {
+            this.value = this.value.replace(/[^0-9]/g, '');
+            if (this.value.length > 11) {
+              this.value = this.value.slice(0, 11);
+            }
+          });
+          
+          input.addEventListener('paste', function(e) {
+            e.preventDefault();
+            const pasteData = e.clipboardData.getData('text');
+            const numbersOnly = pasteData.replace(/[^0-9]/g, '').slice(0, 11);
+            this.value = numbersOnly;
+          });
+        });
+        
+        // Age inputs
+        const ageInputs = document.querySelectorAll('input[type="number"]');
+        ageInputs.forEach(input => {
+          input.addEventListener('input', function() {
+            this.value = this.value.replace(/[^0-9]/g, '');
+            if (this.value.length > 2) {
+              this.value = this.value.slice(0, 2);
+            }
+          });
+          
+          input.addEventListener('paste', function(e) {
+            e.preventDefault();
+            const pasteData = e.clipboardData.getData('text');
+            const numbersOnly = pasteData.replace(/[^0-9]/g, '').slice(0, 2);
+            this.value = numbersOnly;
+          });
+        });
+      }
+      
+      // Fade in animations
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+      };
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+      
+      // Observe elements with fade-in class
+      document.querySelectorAll('.fade-in').forEach(el => {
+        observer.observe(el);
+      });
+      
+      // Initialize everything
+      function init() {
+        setupInputRestrictions();
+        initTestimonialsSlider();
+        
+        // Send page view event
+        gtag('event', 'page_view', {
+          page_title: 'Bangladesh Remote Work Opportunities - Flexible Jobs',
+          page_location: window.location.href
+        });
+        
+        // Send form view event for modal
+        setTimeout(() => {
+          gtag('event', 'view_form', {
+            event_category: 'engagement',
+            event_label: 'Modal Form View'
+          });
+        }, 1000);
+      }
+      
+      // Start initialization
+      init();
+    });
+  </script>
+</body>
+</html>
