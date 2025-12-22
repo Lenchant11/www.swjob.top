@@ -18,10 +18,12 @@
       --accent: #C40000;
       --light: #FFFFFF;
       --dark: #1A202C;
+      --gray-50: #F9FAFB;
       --gray-100: #F8F9FA;
       --gray-200: #E9ECEF;
       --gray-300: #DEE2E6;
       --gray-600: #6C757D;
+      --gray-700: #495057;
       --gray-800: #343A40;
       
       /* Türk sembolü ek renkler */
@@ -539,17 +541,6 @@
       font-size: 0.85rem;
     }
     
-    /* Mobil CTA yukarı taşındı */
-    .mobile-cta {
-      margin-bottom: var(--space-md);
-    }
-    
-    @media (min-width: 1024px) {
-      .mobile-cta {
-        display: none;
-      }
-    }
-    
     /* === BAŞVURU FORMU === */
     .form-card {
       background: white;
@@ -585,23 +576,6 @@
     .form-subtitle {
       color: var(--gray-600);
       font-size: 0.95rem;
-    }
-    
-    .form-step {
-      display: flex;
-      gap: 0.5rem;
-      margin-bottom: 1.5rem;
-    }
-    
-    .step-item {
-      flex: 1;
-      height: 3px;
-      background: var(--gray-200);
-      border-radius: 2px;
-    }
-    
-    .step-item.active {
-      background: var(--primary);
     }
     
     .form-group {
@@ -663,7 +637,7 @@
       display: flex;
       align-items: flex-start;
       gap: 0.5rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
     }
     
     .form-check-input {
@@ -750,6 +724,8 @@
       position: relative;
       overflow: hidden;
       height: 100%;
+      display: flex;
+      flex-direction: column;
     }
     
     .job-card::before {
@@ -777,6 +753,7 @@
       font-weight: 700;
       font-size: 0.8rem;
       margin-bottom: 1rem;
+      width: fit-content;
     }
     
     .job-title {
@@ -792,10 +769,12 @@
       font-weight: 800;
       font-size: 1.25rem;
       margin-bottom: 1rem;
+      flex-wrap: wrap;
     }
     
     .job-features {
       margin-bottom: 1.5rem;
+      flex-grow: 1;
     }
     
     .job-feature {
@@ -811,6 +790,20 @@
       color: var(--primary);
       width: 18px;
       font-size: 1rem;
+    }
+    
+    .salary-details {
+      font-size: 0.9rem;
+      color: var(--gray-600);
+      width: 100%;
+      margin-top: 0.25rem;
+    }
+    
+    .salary-note {
+      font-size: 0.8rem;
+      color: var(--gray-500);
+      width: 100%;
+      margin-top: 0.25rem;
     }
     
     /* === İSTATİSTİKLER BÖLÜMÜ === */
@@ -887,6 +880,7 @@
       box-shadow: var(--shadow-md);
       border: 1px solid var(--gray-200);
       transition: var(--transition-base);
+      height: 100%;
     }
     
     .step-card:hover {
@@ -929,7 +923,7 @@
       margin: var(--space-md) auto 0;
       position: relative;
       overflow: hidden;
-      height: 220px;
+      min-height: 220px;
     }
     
     .testimonials-track {
@@ -942,6 +936,7 @@
       flex: 0 0 20%;
       padding: 0 0.5rem;
       box-sizing: border-box;
+      height: 100%;
     }
     
     .testimonial-card {
@@ -1138,7 +1133,7 @@
     
     @media (min-width: 768px) {
       .footer-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
       }
     }
     
@@ -1385,8 +1380,9 @@
       background: var(--gray-50);
       border-left: 4px solid var(--primary);
       padding: 1rem 1.5rem;
-      margin: 2rem 0;
+      margin: 2rem auto;
       border-radius: 0 8px 8px 0;
+      max-width: 1200px;
     }
     
     .transparency-notice h4 {
@@ -1412,21 +1408,6 @@
     
     .employment-disclaimer strong {
       color: #e65100;
-    }
-    
-    /* Maaş detayları */
-    .salary-details {
-      font-size: 0.9rem;
-      color: var(--gray-600);
-      margin-top: 0.25rem;
-      display: block;
-    }
-    
-    .salary-note {
-      font-size: 0.8rem;
-      color: var(--gray-500);
-      display: block;
-      margin-top: 0.25rem;
     }
     
     /* Platform açıklaması */
@@ -1469,7 +1450,8 @@
       padding: 1.5rem;
       background: var(--gray-50);
       border-radius: 8px;
-      margin: 2rem 0;
+      margin: 2rem auto;
+      max-width: 1200px;
     }
     
     .company-info p {
@@ -1525,6 +1507,18 @@
       .platform-explanation {
         padding: 1.5rem 1rem;
       }
+      
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .transparency-notice {
+        margin: 2rem 1rem;
+      }
+      
+      .company-info {
+        margin: 2rem 1rem;
+      }
     }
     
     /* Türkçe font optimizasyonu */
@@ -1534,17 +1528,35 @@
       -webkit-font-smoothing: antialiased;
     }
     
-    /* Türk kültürel elementleri */
+    /* Türk kültürel elementleri - DÜZELTİLDİ: class adı düzeltildi */
     .turkish-pattern {
       background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23e30a17' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
       background-size: 200px;
       opacity: 0.3;
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
       z-index: -1;
+      pointer-events: none;
+    }
+    
+    /* Özel stiller */
+    small {
+      display: block;
+      margin-top: 0.25rem;
+      font-size: 0.8rem;
+      color: var(--gray-600);
+    }
+    
+    select.form-control {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%236B7280' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.75rem center;
+      background-size: 16px 12px;
+      padding-right: 2.5rem;
     }
   </style>
   
@@ -1576,7 +1588,7 @@
         try {
           if (!eventSent) {
             gtag('event', 'conversion', {
-              'send_to': 'AW-17581844996/AlkuCIvHodMbEITU1r9B',
+              'send_to': 'AW-17581844996/_tVECOauzdUbEITU1r9B',
               'event_callback': callback,
               'value': 17,
               'currency': 'USD'
@@ -1665,7 +1677,7 @@
   </div>
 
   <!-- Şeffaflık bildirimi -->
-  <div class="transparency-notice container">
+  <div class="transparency-notice">
     <h4><i class="fas fa-info-circle"></i> Güvenilir İstihdam Platformu</h4>
     <p>Evinizdeİş, Türkiye'de kayıtlı bir istihdam platformudur. İş arayanlardan hiçbir ücret talep etmiyoruz.</p>
   </div>
@@ -1787,7 +1799,7 @@
                 </div>
                 <input type="tel" id="phone" class="form-control phone-input" placeholder="5xx xxx xxxx" pattern="[0-9]{10}" required>
               </div>
-              <small style="color: var(--gray-600); font-size: 0.8rem; margin-top: 0.25rem; display: block;">Örnek: 532 123 4567 (başında 0 olmadan)</small>
+              <small>Örnek: 532 123 4567 (başında 0 olmadan)</small>
             </div>
             
             <div class="form-group">
@@ -1828,9 +1840,9 @@
               <input type="checkbox" id="consent" class="form-check-input" required checked>
               <label for="consent" class="form-check-label">
                 <span>Okudum ve kabul ediyorum:</span> 
-                <a href="/gizlilik.html" target="_blank">Gizlilik Politikası</a> 
+                <a href="/privacy.html" target="_blank">Gizlilik Politikası</a> 
                 <span>ve</span> 
-                <a href="/kullanim.html" target="_blank">Kullanım Şartları</a>.
+                <a href="/userterms.html" target="_blank">Kullanım Şartları</a>.
               </label>
             </div>
             
@@ -1864,9 +1876,9 @@
       <p>Tüm ilan edilen pozisyonlar Türk iş kanunlarına ve düzenlemelerine uygundur.</p>
       
       <div class="compliance-links">
-        <a href="/hakkimizda.html"><i class="fas fa-info-circle"></i> Hakkımızda</a>
-        <a href="/uyumluluk.html"><i class="fas fa-balance-scale"></i> Uyumluluk Bilgileri</a>
-        <a href="/iletisim.html"><i class="fas fa-phone-alt"></i> Destek İletişimi</a>
+        <a href="/about.html"><i class="fas fa-info-circle"></i> Hakkımızda</a>
+        <a href="/compliance.html"><i class="fas fa-balance-scale"></i> Uyumluluk Bilgileri</a>
+        <a href="/contact.html"><i class="fas fa-phone-alt"></i> Destek İletişimi</a>
       </div>
     </div>
   </section>
@@ -1895,9 +1907,9 @@
           <div class="job-salary">
             <i class="fas fa-money-bill-wave"></i>
             <span>Saatlik ₺125+</span>
-            <span class="salary-details">Artı yasal haklar</span>
-            <span class="salary-note">Haftalık banka havalesi ile ödeme</span>
           </div>
+          <span class="salary-details">Artı yasal haklar</span>
+          <span class="salary-note">Haftalık banka havalesi ile ödeme</span>
           <div class="job-features">
             <div class="job-feature">
               <i class="fas fa-clock"></i>
@@ -1928,9 +1940,9 @@
           <div class="job-salary">
             <i class="fas fa-money-bill-wave"></i>
             <span>Saatlik ₺115+</span>
-            <span class="salary-details">Veya proje bazlı ücret</span>
-            <span class="salary-note">Düzenli ödeme planı</span>
           </div>
+          <span class="salary-details">Veya proje bazlı ücret</span>
+          <span class="salary-note">Düzenli ödeme planı</span>
           <div class="job-features">
             <div class="job-feature">
               <i class="fas fa-clock"></i>
@@ -1961,9 +1973,9 @@
           <div class="job-salary">
             <i class="fas fa-money-bill-wave"></i>
             <span>Saatlik ₺135+</span>
-            <span class="salary-details">Artı performans teşvikleri</span>
-            <span class="salary-note">İş kanununa uygun</span>
           </div>
+          <span class="salary-details">Artı performans teşvikleri</span>
+          <span class="salary-note">İş kanununa uygun</span>
           <div class="job-features">
             <div class="job-feature">
               <i class="fas fa-headset"></i>
@@ -1994,9 +2006,9 @@
           <div class="job-salary">
             <i class="fas fa-money-bill-wave"></i>
             <span>Deneyime ve role göre</span>
-            <span class="salary-details">Minimum saatlik ₺120</span>
-            <span class="salary-note">Resmi iş sözleşmesi</span>
           </div>
+          <span class="salary-details">Minimum saatlik ₺120</span>
+          <span class="salary-note">Resmi iş sözleşmesi</span>
           <div class="job-features">
             <div class="job-feature">
               <i class="fas fa-tasks"></i>
@@ -2027,9 +2039,9 @@
           <div class="job-salary">
             <i class="fas fa-money-bill-wave"></i>
             <span>Saatlik ₺115+</span>
-            <span class="salary-details">Göreve göre değişir</span>
-            <span class="salary-note">Düzenli istihdam şartları</span>
           </div>
+          <span class="salary-details">Göreve göre değişir</span>
+          <span class="salary-note">Düzenli istihdam şartları</span>
           <div class="job-features">
             <div class="job-feature">
               <i class="fas fa-eye"></i>
@@ -2060,9 +2072,9 @@
           <div class="job-salary">
             <i class="fas fa-money-bill-wave"></i>
             <span>Proje veya saatlik ücret</span>
-            <span class="salary-details">Minimum saatlik ₺110</span>
-            <span class="salary-note">Tüm düzenlemelere uygun</span>
           </div>
+          <span class="salary-details">Minimum saatlik ₺110</span>
+          <span class="salary-note">Tüm düzenlemelere uygun</span>
           <div class="job-features">
             <div class="job-feature">
               <i class="fas fa-clock"></i>
@@ -2335,9 +2347,9 @@
         
         <!-- Uyumluluk bağlantıları -->
         <div class="compliance-links mt-3">
-          <a href="/gizlilik.html"><i class="fas fa-lock"></i> Gizlilik Politikası</a>
-          <a href="/kullanim.html"><i class="fas fa-file-contract"></i> Kullanım Şartları</a>
-          <a href="/uyumluluk.html"><i class="fas fa-balance-scale"></i> Uyumluluk Bilgileri</a>
+          <a href="/privacy.html"><i class="fas fa-lock"></i> Gizlilik Politikası</a>
+          <a href="/userterms.html"><i class="fas fa-file-contract"></i> Kullanım Şartları</a>
+          <a href="/compliance.html"><i class="fas fa-balance-scale"></i> Uyumluluk Bilgileri</a>
         </div>
       </div>
     </div>
@@ -2396,20 +2408,20 @@
         <div class="footer-links">
           <h3>YASAL & UYUMLULUK</h3>
           <ul>
-            <li><a href="/gizlilik.html">Gizlilik Politikası</a></li>
-            <li><a href="/kullanim.html">Kullanım Şartları</a></li>
-            <li><a href="/uyumluluk.html">Uyumluluk Bilgileri</a></li>
-            <li><a href="/iletisim.html">Destek İletişimi</a></li>
+            <li><a href="/privacy.html">Gizlilik Politikası</a></li>
+            <li><a href="/userterms.html">Kullanım Şartları</a></li>
+            <li><a href="/compliance.html">Uyumluluk Bilgileri</a></li>
+            <li><a href="/contact.html">Destek İletişimi</a></li>
           </ul>
         </div>
         
         <div class="footer-links">
           <h3>EK SAYFALAR</h3>
           <ul>
-            <li><a href="/hakkimizda.html">Hakkımızda</a></li>
-            <li><a href="/iletisim.html">İletişim</a></li>
-            <li><a href="/kullanim.html">Kullanıcı Sözleşmesi</a></li>
-            <li><a href="/uyumluluk.html">Yasal Uyumluluk</a></li>
+            <li><a href="/about.html">Hakkımızda</a></li>
+            <li><a href="/contact.html">İletişim</a></li>
+            <li><a href="/userterms.html">Kullanıcı Sözleşmesi</a></li>
+            <li><a href="/compliance.html">Yasal Uyumluluk</a></li>
           </ul>
         </div>
       </div>
@@ -2463,7 +2475,7 @@
             </div>
             <input type="tel" id="modal-phone" class="form-control phone-input" placeholder="5xx xxx xxxx" pattern="[0-9]{10}" required>
           </div>
-          <small style="color: var(--gray-600); font-size: 0.8rem; margin-top: 0.25rem; display: block;">Örnek: 532 123 4567 (başında 0 olmadan)</small>
+          <small>Örnek: 532 123 4567 (başında 0 olmadan)</small>
         </div>
         
         <div class="form-group">
@@ -2504,9 +2516,9 @@
           <input type="checkbox" id="modal-consent" class="form-check-input" required checked>
           <label for="modal-consent" class="form-check-label">
             <span>Okudum ve kabul ediyorum:</span> 
-            <a href="/gizlilik.html" target="_blank">Gizlilik Politikası</a> 
+            <a href="/privacy.html" target="_blank">Gizlilik Politikası</a> 
             <span>ve</span> 
-            <a href="/kullanim.html" target="_blank">Kullanım Şartları</a>.
+            <a href="/userterms.html" target="_blank">Kullanım Şartları</a>.
           </label>
         </div>
         
@@ -2688,6 +2700,7 @@
         const name = form.querySelector('input[type="text"]').value.trim();
         const phone = form.querySelector('input[type="tel"]').value.trim();
         const email = form.querySelector('input[type="email"]').value.trim();
+        const city = form.querySelector('select').value;
         const age = form.querySelector('input[type="number"]').value;
         const consent = form.querySelector('#consent, #modal-consent').checked;
         const eligibility = form.querySelector('#eligibility, #modal-eligibility').checked;
@@ -2715,6 +2728,12 @@
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
           form.querySelector('input[type="email"]').style.borderColor = 'var(--primary)';
+          return false;
+        }
+        
+        // Şehir doğrulama
+        if (!city) {
+          form.querySelector('select').style.borderColor = 'var(--primary)';
           return false;
         }
         
